@@ -137,6 +137,44 @@
 	<code>string myText =</code> <code id="kw"> "Hello"</code><code>; // String (text)</code><br>
 	<code>bool myBoolean =</code> <code id="kw"> true</code><code>; // Boolean (true or false)</code<
 	</p>
+	<p>To display variables the <code id="ct">cout</code> onject is used with the <code id="ct"><<</code> operator.</p>
+	<p>You can combine text and varibles as long as you seperate them with the <code id="ct"><<</code> operator.<br>
+	Example:<br>
+	<code id="kw">int</code> <code>myAge = </code> <code id="kw">37</code><code>;</code><br>
+	<code> cout <<</code><code id="kw>"John is "</code> <code> << myAge << </code> <code id="kw">" years old."</code><code>;</code><br>
+	<br>or you can add varibles together using the <code id="ct>+</code> operator:<br>
+	<code id="kw">int</code> <code> x = </code><code id="kw">5</code><code>;</code><br>
+	<code id="kw">int</code> <code> y = </code><code id="kw">6</code><code>;</code><br>
+	<code id="kw">int</code> <code> sum = x + y </code><code>;</code><br>
+	<code> cout << sum;</code>
+	</p>
+	<p>You can delcare more than one varibale of the same type, if you seperate it with a comma<br>
+	<code id="kw">int</code> <code>x =</code> <code id="kw">5</code><code>, y =</code> <code id="kw">6</code><code>, z =</code> <code id="kw">50</code><code>;</code><br>
+	<code> cout << x + y + z;</code><br>
+	<br>Or you assign the same value to multiple varibales in one line<br>
+	<code id="kw">int</code> <code>x, y, z;</code><br>
+	<code>x = y = z =</code> <code id="kw">50</code><code>;</code><br>
+	<code> cout << x + y + z;</code>
+	</p>
+
+<h1>Identifiers</h1>
+	<p>All variables myt be identified with unique names<br>
+	They can be short names or more descriptive names.<br>
+	here are a few general rules for naming variables<br>
+	<ul>
+		<li>Names can contain letters, digits and underscores</li>
+		<li>Names must begin with a letter or an underscore (_)</li>
+		<li>Names are case sensitive (myVar and myvar are different variables)</li>
+		<li>Names cannot contain whitespaces or special characters like !, #, %, etc.</li>
+		<li>Reserved words (like C++ keywords, such as int) cannot be used as names</li>
+	</ul>
+	</p>
+
+<h1>Constants</h1>
+	<p>When you don't want others to override existing varibales values use the <code id="ct">const</code> keyword, which makes it <b>unchangeable and read-only</b></code><br>
+	Only uses constant whn you now that value will unlikey be abl to change.</p>
+
+
 
 </body>
 </html>
