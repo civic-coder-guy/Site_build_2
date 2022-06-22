@@ -25,7 +25,7 @@
 	
 <h1>Syntax</h1>
 	<p>Example breakdown<br>
-	Line 1: <code id="ct">#include <iostream></code><br>
+	Line 1: <code id="ct">#include &lt;iostream&gt;</code><br>
 	Line 2: <code id="ct">using namespace std;</code><br>
 	Line 3: <br>
 	Line 4: <code id="kw">int </code> <code> main() {</code><br>
@@ -34,7 +34,7 @@
 	Line 7: <code>}</code>
 	</p>
 	<ol>
-		<li><code id="ct">#include <iostream></code> is a header file library that lets us work with input and output objects, such as <code id="ct">cout</code> (used in line 5). Header files add functionality to C++ programs.</li>
+		<li><code id="ct">#include &lt;iostream&gt;</code> is a header file library that lets us work with input and output objects, such as <code id="ct">cout</code> (used in line 5). Header files add functionality to C++ programs.</li>
 		<li><code id="ct">using namespace std</code> means that we can use names for objects and variables from the standard library.</li>
 		<li>A blank line. C++ ignores white space. But we use it to make the code more readable.</li>
 		<li>Another thing that always appear in a C++ program, is <code id="ct">int main()</code>. This is called a function. Any code inside its curly brackets <code id="ct">{}</code> will be executed.</li>
@@ -49,10 +49,94 @@
 		<code id="kw">int</code> <code>main () {</code> <code id="kw">cout</code> <code><< "Hello World! ";</code> <code id="kw"> return 0;</code> <code> }</code></li>
 		<li>The compiler ignores white spaces. However, multiple lines makes the code more readable.</li>
 		<li>It is up to you if you want to include the standard namespace library or not.</li>
+		<li>Including the <code id="kw">using namespace std;</code> is optional.</li>
+		<li>You can also omit <code id="ct">using namesapce std</code> and replace it with <code id="ct">std</code> followed with <code id="ct">::</code><br>
+		<code id="ct">#include &lt;iostream&gt;</code><br>
+		<br>
+		<code id="kw">int</code> <code>main(){<br>
+		     <code><b>std</b> ::cout << "Hello World!";</code><br>
+		     <code id="kw">return 0</code></code>;</code><br>
+		<code>}</code>
 	</ul>
 
-<h2></h2>
+<h1>Output (Print Text)</h1>
+	<p>The <code id="kw">cout</code> object, together with the <code id="kw"><<</code> operator, is used to output values/print text:<br>
+	<code>#include &lt;iostream&gt;</code><br>
+	<code>using namespace std;</code><br>
+	<code id="kw">int</code> <code>main(){<br>
+	     cout << "Hello World!;</code><br>
+	     <code id="kw">return 0</code><code>;</code><br>
+	<code>}</code>
+	</p>
+	<p>you can add as many <code id="ct">cout</code> objects as you want, but it will not put them on a new line.<br>
+	<code>#include &lt;iostream&gt;</code><br>
+	<code>using namespace std;</code><br>
+	<code id="kw">int</code> <code>main(){<br>
+	     cout << "Hello World!;<br>
+	     cout << "C++ is awesome!;</code><br>
+	     <code id="kw">return 0</code><code>;</code><br>
+	<code>}</code>
+	</p>
 
+<h1>New Lines</h1>
+	<p>To insert a new line use the <code id="ct">\n</code> character</p>
+	<p>Inserting two <code id="ct">\n</code> will create a blank line</p>
+	<p>Examples:<br>
+	<code>#include &lt;iostream&gt;<br>
+	using namespace std;</code><br>
+	<br>
+	<code id="kw">int</code> <code> main() {<br>
+ 	 cout << "Hello World!</code> <code id="nl"> \n";</code><br>
+ 	 <code>cout << "I am learning C++";</code><br>
+ 	 <code id="kw">return 0</code><code>;<br>
+	}</code><br>
+	<br>or<br><br>
+	<code id="kw">int</code> <code> main() {<br>
+ 	 cout << "Hello World!</code> <code id="nl"> \n\n";</code><br>
+ 	 <code>cout << "I am learning C++";</code><br>
+ 	 <code id="kw">return 0</code><code>;<br>
+	}</code><br>	
+	<br>or you can use the <code id="ct"> endl</code><br>
+	<br>
+	<code id="kw">int</code> <code> main() {<br>
+ 	 cout << "Hello World!</code> <code id="nl"> endl";</code><br>
+ 	 <code>cout << "I am learning C++";</code><br>
+ 	 <code id="kw">return 0</code><code>;<br>
+	}</code>
+	</p>
+
+<h2>Other Examples of Escape Sequences:</h2>
+	<p>To create a horizatonal tab use the <code id="ct">\t</code><br>
+	To insert a backslash character use the <code id="ct">//</code><br>
+	To inserate a double quote character use the <code id="ct">\"</code>
+	</p>
+
+<h1>Comments</h1>
+	<p>Comments are used to explain your C++ code, and it makes your code more readable<br>
+	Can also be uses to prevent the execution when testing out new code.<br>
+	There are two ways to add comments: singled lined or mulilined.<br>
+	Single-line comments start with two forward slashes <code id="ct">//</code> followed by your text.<br>
+	You can insert your comments before or after your code line.<br>
+	Multi-line comments starts with <code id="ct">/*</code> and ends with <code id="ct">*/</code> and any text inbetween will be ingnored by the compiler<br>
+	</p>
+	
+<h1>Variables</h1>
+	<p>These are containers for storing data values.</p>
+	<p>The different types of variables are:</p>
+		<ul>
+			<li><code id="ct">int</code> - stores integers (whole integers), without decimals.</li>
+			<li><code id="ct">double</code> - stores floating point numbers, with decimals.</li>
+			<li><code id="ct">char</code> - store single characters surrounded by singel quotes.</li>
+			<li><code id="ct">string</code> Stores text surrounded by double quotes.</li>
+			<li><code id="ct">bool</code> - sotres calues with either true or false state.</li>
+		</ul>
+	<p>Examples:<br>
+	<code id="kw">int</code> <code>myNum =</code> <code id="kw">5</code><code>; // Integer (whole number without decimals)</code><br>
+	<code id="kw">double</code> <code>myFloatNum =</code> <code id="kw"> 5.99</code><code>; // Floating point number (with decimals)</code><br>
+	<code id="kw">char</code> <code>myLetter =</code> <code id="kw">'D'</code><code>; // Character</code><br>
+	<code>string myText =</code> <code id="kw"> "Hello"</code><code>; // String (text)</code><br>
+	<code>bool myBoolean =</code> <code id="kw"> true</code><code>; // Boolean (true or false)</code<
+	</p>
 
 </body>
 </html>
