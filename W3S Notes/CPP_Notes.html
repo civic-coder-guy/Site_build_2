@@ -172,9 +172,90 @@
 
 <h1>Constants</h1>
 	<p>When you don't want others to override existing varibales values use the <code id="ct">const</code> keyword, which makes it <b>unchangeable and read-only</b></code><br>
-	Only uses constant whn you now that value will unlikey be abl to change.</p>
+	Only uses constant when you know that value will unlikey be able to change.</p>
 
+<h1>User Input</h1>
+	<p>If you want to get user input use the <code id="ct">cin</code>.
+	<p><code id="ct">cin</code> is a predefined variable that reads data from the keyboard with the extraction operator (<code id="ct">>></code>).</p>
+	<p>Example of taking user input:<br>
+	<code id="kw">int</code> <code>x;<br>
+	cout << </code> <code id="kw">"Type a number: "</code> <code> //Type a number and press enter<br>
+	cin >> x; //Get user input from the keyboard<br>
+	cout <<</code> <code id="kw">"Your number is: "</code> <code> << x; //Display the input value</code>
+	</p>
+<h2>Other Information</h2>
+	<p><code id="ct">cout</code> is pronounced "see-out" and is used for output with the insertion operator (<code id="ct"><<</code>)<br>
+	<code id="ct">cin</code> is pronounced "see-in: and is used for input with the extraction operator (<code id="ct">>></code>).
+	</p>
+<h1>Creating a Simple Addition Calculator</h1>
+	<div id="codebox">
+		<p>Example Code</p>
+		<div id="codedisplay">
+			<code id="cpp"> int</code> <code id="rc"> x, y;</code><br>
+			<code id="cpp"> int</code> <code id="rc"> sum;</code><br>
+			<code id="rc"> cout <<</code> <code id="ts">"Type a number: "</code><code id="rc">;</code><br>
+			<code id="rc"> cin >> x;</code><br>
+			<code id="rc"> cout <<</code> <code id="ts">"Type another number: "</code><code id="rc">;</code><br>
+			<code id="rc"> cin >> y;<br>
+			sum = x + y;<br>
+			cout <<</code><code id="ts">"Sum is "</code> <code id="rc"> << sum;</code>
+		</div>
+	<p><a href="https://www.w3schools.com/cpp/showcpp.asp?filename=demo_user_input2" target="_blank"><button class="custom-btn btn-7"><span>Click to Try!</span></button></a></p>
+	<p class="credit">Courtesy of <a href="https://www.w3schools.com" target="_blank">W3 Schools</a></p>
+	</div>
 
+<h1>Basic Data Types</h1>
+	<table>
+		<tr>
+			<th>Data Type</th>
+			<th>Size</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><code id="ct">boolean</code></td>
+			<td>1 byte</td>
+			<td>Stores true or false values</td>
+		</tr>
+		<tr>
+			<td><code id="ct">char</code></td>
+			<td>1 byte</td>
+			<td>Stores a single character/letter/number or ASCII values</td>
+		</tr>
+		<tr>
+			<td><code id="ct">int</code></td>
+			<td>2 or 4 bytes</td>
+			<td>Stores whole numbers, without decimals</td>
+		</tr>
+		<tr>
+			<td><code id="ct">float</code></td>
+			<td>4 bytes</td>
+			<td>Stores fractional numbers, containing one or more decimals. (7 decimal digits)</td>
+		</tr>
+		<tr>
+			<td><code id="ct">double</code></td>
+			<td>8 bytes</td>
+			<td>Storing fractional numbers, containing one or more decimals. (15 decimal digits)</td>
+		</tr>
+	</table>
+	
+<h1>Data Types</h1>
+	<h2>Numeric</h2>
+		<p>When you need to store a whole number without decimals like 5 or 1000 use <code id="ct">int</code><br>
+		When you need a floating point number (with decimals) like 8.46 or 3.89765 use <code id="ct">float</code> or <code id="ct">double</code>
+		</p>
+	
+	<h2>Boolean</h2>
+		<p>This is a data type that can only take the two values of <code id="ct">true</code> or <code id="ct">false</code> and when the value is returned <code id="ct">true</code> = <code id="ct">1</code> and <code id="ct">false</code> = <code id="ct">0</code>
+		</p>
+
+	<h2>Charaters</h2>
+		<p>This data type is used to store a single character. It must be surrounded by single quotes 'Z' or 'z'.
+		</p>
+
+	<h2>Strings</h2>
+		<p>This is used to store a sequence of characters. They must be surrounded with double quotes "Hello World".<br>
+		In order to use string you must have an additional header file in the source code, the <code id="ct">#include &ltstring&gt</code> library.
+		</p>
 
 </body>
 </html>
