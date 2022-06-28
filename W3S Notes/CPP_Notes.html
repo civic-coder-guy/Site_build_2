@@ -257,5 +257,234 @@
 		In order to use string you must have an additional header file in the source code, the <code id="ct">#include &ltstring&gt</code> library.
 		</p>
 
+<h1>Operators</h1>
+	<p>Used to perform operations on variables and values.</p>
+	<p>With the <code id="ct">+</code> is used to add together two valus together.</p>
+	<p>There are five groups of operators thet C++ uses and divides them in to:<br>
+		<ul>
+			<li><a href="https://www.w3schools.com/cpp/cpp_operators.asp#arithmetic" target="_blank">Arithmetic operators</a></li>
+			<li><a href="https://www.w3schools.com/cpp/cpp_operators_assignment.asp" target="_blank">Assignment operators</a></li>
+			<li><a href="https://www.w3schools.com/cpp/cpp_operators_comparison.asp" target="_blank">Comparison operators</a></li>
+			<li><a href="https://www.w3schools.com/cpp/cpp_operators_logical.asp" target="_blank">Logical operators</a></li>
+			<li>Bitwise operators</li>
+		</ul>
+	</p>
+<h2>Arithmetic Operators</h2>
+	<table>	
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Example</th>
+		<tr>
+			<td>+</td>
+			<td>Addition</td>
+			<td>Adds together two values</td>
+			<td>x + y</td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>Subtraction</td>
+			<td>Subtracts one value from another</td>
+			<td>x - y</td>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td>Multiplication</td>
+			<td>Multiplies two values</td>
+			<td>x * y</td>
+		</tr>
+		<tr>
+			<td>/</td>
+			<td>Division</td>
+			<td>Divides one value by another</td>
+			<td>x / y</td>
+		</tr>
+		<tr>
+			<td>%</td>
+			<td>Modulus</td>
+			<td>Returns the division remainder</td>
+			<td>x % y</td>
+		</tr>
+		<tr>
+			<td>++</td>
+			<td>Increment</td>
+			<td>Increases the value of a variable by 1</td>
+			<td>++x</td>
+		</tr>
+		<tr>
+			<td>--</td>
+			<td>Decrement</td>
+			<td>Decreases the value of a variable by 1</td>
+			<td>--x</td>
+		</tr>
+	</table>
+
+<h2>Assignment Operators</h2>
+	<p>These are used to assign values to varibales</p>
+		
+	<table>
+		<tr>
+			<th>Operator</th>
+			<th>Example</th>
+			<th>Same As</th>
+		</tr>
+		<tr>
+			<td>=</td>
+			<td>x = 5</td>
+			<td>x = 5</td>	
+		</tr>
+		<tr>
+			<td>+=</td>
+			<td>x += 3</td>
+			<td>x = x + 3</td>
+		</tr>
+		<tr>
+			<td>-=</td>
+			<td>x -= 3</td>
+			<td>x = x - 3</td>	
+		</tr>
+		<tr>
+			<td>*=</td>
+			<td>x *= 3</td>
+			<td>x = x * 3</td>
+		</tr>
+		<tr>
+			<td>/=</td>
+			<td>x /= 3</td>
+			<td>x = x / 3</td>	
+		</tr>
+		<tr>
+			<td>%=</td>
+			<td>x %= 3</td>
+			<td>x = x % 3</td>
+		</tr>
+		<tr>
+			<td>&=</td>
+			<td>x &= 3</td>
+			<td>x = x & 3</td>
+		</tr>
+		<tr>
+			<td>|=</td>
+			<td>x |= 3</td>
+			<td>x = x | 3</td>	
+		</tr>
+		<tr>
+			<td>^=</td>
+			<td>x ^= 3</td>
+			<td>x = x ^ 3</td>	
+		</tr>
+		<tr>
+			<td>>>=</td>
+			<td>x >>= 3</td>
+			<td>x = x >> 3</td>	
+		</tr>
+		<tr>
+			<td><<=</td>
+			<td>x <<= 3</td>
+			<td>x = x << 3</td>
+		</tr>
+	</table>
+
+<h2>Comparison Operators</h2>
+	<p>These are used to compate two values (note: the return value will either be true (1) or false (0)</p>
+
+	<table>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>==</td>
+			<td>Equal to</td>
+			<td>x == y</td>	
+		</tr>
+		<tr>
+			<td>!=</td>
+			<td>Not equal</td>
+			<td>x != y</td>
+		</tr>
+		<tr>
+			<td>></td>
+			<td>Greater than</td>
+			<td>x > y</td>
+		</tr>
+		<tr>
+			<td><</td>
+			<td>Less than</td>
+			<td>x < y</td>	
+		</tr>
+		<tr>
+			<td>>=</td>
+			<td>Greater than or equal to</td>
+			<td>x >= y</td>
+		</tr>
+		<tr>
+			<td><=</td>
+			<td>Less than or equal to</td>
+			<td>x <= y</td>
+		</tr>
+	</table>
+
+<h2>Logical Operators</h2>
+	<p>These are used to determine the logic between variables or values</p>
+	
+	<table>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>&&</td>
+			<td>Logical and</td>
+			<td>Returns true if both statements are true</td>
+			<td>x < 5 &&  x < 10</td>
+		</tr>
+		<tr>
+			<td>||</td>
+			<td>Logical or</td>
+			<td>Returns true if one of the statements is true</td>
+			<td>x < 5 || x < 4</td>	
+		</tr>
+		<tr>
+			<td>!</td>
+			<td>Logical not</td>
+			<td>Reverse the result, returns false if the result is true</td>
+			<td>!(x < 5 && x < 10)</td>
+		</tr>
+	</table>
+
+<h1>String Concatenation and Append</h1>
+	<p>You can use the <code id="ct">+</code> operator can be used between strings to add them together to make a new string.</p>
+	<p>Example<br>
+	<code> string firstName = </code><code id="ct">"John "</code><code>;</code><br>
+	<code> string lastName = </code><code id="ct">"Smith"</code><code>;</code><br>
+	<code> string fullName = firstName + lastName;<br>
+	cout << fullName;</code>
+	</p>
+	<p>You can also concatenate strings with <code id="ct">append()</code></p>
+	<p>Example:<br>
+	<code> string firstName = </code><code id="ct">"John "</code><code>;</code><br>
+	<code> string lastName = </code><code id="ct">"Smith"</code><code>;</code><br>
+	<code> string fullName = firstName.append(lastName);<br>
+	cout << fullName;</code>
+	</p>
+	
+<h1>Numbers and Strings</h1>
+	<p>If you add two numbers the result will be a number, if you add two strings the result will be string concatenation.</p>
+	<p>Trying to add a number and and string will result in an error</p>
+	<p>You can ge teh length of a string by using the <code id="ct">length()</code> function. In C++ you can also use the <code id="ct">size()</code> functions however, its up to you which one you want to use.</p>
+	<p>Examples<br>
+	<code>string = </code><code"ct">"abcdefghijklmnopqrstuvwxyz"</code> <code>;</code><br>
+	<code> cout << </code> <code id="ct">The length o this text string is  "</code> <code> << txt.length();</code><br>
+	<br>
+	<code>string = </code><code"ct">"abcdefghijklmnopqrstuvwxyz"</code> <code>;</code><br>
+	<code> cout << </code> <code id="ct">The length o this text string is  "</code> <code> << txt.size();</code>
+	</p>
+	 
+
 </body>
 </html>
