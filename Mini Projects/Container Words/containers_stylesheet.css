@@ -1,0 +1,581 @@
+div {
+  text-align:center;
+  color: white;
+}
+
+* {
+  border-radius: 2px;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box5a {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  box-shadow: 5px 5px 5px pink;
+  animation-name: box1;
+  animation-duration: 5s;  
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes box1 {
+  from {background-color: green;}
+  to {background-color: blue;}
+}
+
+
+#box6 {
+  width: 30px;
+  height: 30px;
+  background: blue;
+  position: relative;
+  animation: mymove1 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove1 {
+  from {
+    left: 0px;
+    top: 0px;
+    background-color: green;
+  }
+  to {
+    left: 30px;
+    top: -100px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box7 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove7 5s /*infinite*/;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove7 {
+  from {
+    left: 0px;
+    top: 0px;
+    background-color: green;
+  }
+  to {
+    left: 60px;
+    top: -210px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box8 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove8 5s /*infinite*/;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove8 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 60px;
+    top: -210px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box9 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove9 5s /*infinite*/;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove9 {
+  from {
+    left: 0px;
+    top: 0px;
+    background-color: green;
+  }
+  to {
+    left: 60px;
+    top: -210px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box10 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove10 5s /*infinite*/;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove10 {
+  from {
+    left: 0px;
+    top: 0px;
+    background-color: green;
+  }
+  to {
+    left: 60px;
+    top: -210px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box11 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove11 5s /*infinite*/;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove11 {
+  from {
+    left: 0px;
+    top: 0px;
+    
+  }
+  to {
+    left: 60px;
+    top: -210px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box12 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove12 5s /*infinite*/;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove12 {
+  from {
+    left: 0px;
+    top: 0px;
+    background-color: green;
+  }
+  to {
+    left: 60px;
+    top: -210px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box13, #box14, #box15, #box16, #box17, #box18 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove13 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove13 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 95px;
+    top: -390px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box19 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove19 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove19 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 125px;
+    top: -570px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box20 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove20 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove20 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 155px;
+    top: -600px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box21 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove21 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove21 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 125px;
+    top: -555px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box22 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove22 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove22 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 155px;
+    top: -585px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box23 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove23 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove23 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 125px;
+    top: -540px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box24 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove24 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove24 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 155px;
+    top: -570px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box25, #box26, #box27, #box28, #box29, #box30 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove25 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove25 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 190px;
+    top: -750px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box31 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove31 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove31 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 220px;
+    top: -780px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box32 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove32 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove32 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 250px;
+    top: -810px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box33, #box34, #box35, #box36, #box37, #box38 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove33 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove33 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 285px;
+    top: -990px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box39 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove39 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove39 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 315px;
+    top: -1020px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box40 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove40 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove40 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 345px;
+    top: -1050px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+/**************/
+#box41, #box42, #box43, #box44, #box45, #box46 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove41 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove41 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 380px;
+    top: -1230px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box47 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove47 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove47 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 410px;
+    top: -1410px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box48 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove48 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove48 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 410px;
+    top: -1290px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
+#box49, #box50, #box51, #box52, #box53, #box54 {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: relative;
+  animation: mymove51 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 5px 5px 5px pink;
+}
+
+@keyframes mymove51 {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 440px;
+    top: -1470px;
+    bottom: 80px;
+    background-color: blue;
+  }
+}
+
