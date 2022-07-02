@@ -1,0 +1,8 @@
+.box1 {
+    border: 5px solid #F06449;
+    border-radius: 5px;
+    display: block;
+    padding: 0 15px 0 15px;
+}
+
+body {
