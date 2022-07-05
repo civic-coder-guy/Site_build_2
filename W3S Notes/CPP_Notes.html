@@ -484,7 +484,379 @@
 	<code>string = </code><code"ct">"abcdefghijklmnopqrstuvwxyz"</code> <code>;</code><br>
 	<code> cout << </code> <code id="ct">The length o this text string is  "</code> <code> << txt.size();</code>
 	</p>
-	 
+	
+<h1>Access Strings</h1>
+	<p>You can access the character in a string by refering to its index number inside square brackers <code id="kw">[]</code>.</p>
+	<p>Example<br>
+	<code>string myString = </code><code id="ct">"Hello"</code><code> ;<br>
+	cout << myString[</code><code id="ct">0</code><code>];</code>
+	</p>
+	<table>
+		<tr>
+			<td>H</td>
+			<td>E</td>
+			<td>L</td>
+			<td>L</td>
+			<td>O</td>
+		</tr>
+		<tr>
+			<td>[0]</td>
+			<td>[1]</td>
+			<td>[2]</td>
+			<td>[3]</td>
+			<td>[4]</td>
+		</tr>
+	</table>
+	<p>If you need to change specific character in a string refer to the index and use single quotes<br>
+	Example:<br>
+	<code>string myString = </code> <code id="ct">"Hello"</code><code>;<br>
+	myString[</code><code id="ct">0</code><code>] = </code> <code id="ct">'J'</code><code>;<br>
+	cout << myString;</code>
+	</p>
+
+<h1>User Input Strings</h1>
+	<p>You can use the extraction operator <code id="ct">>></code> on <code id="ct">cin</code> to display a string enter by a user<br>
+	<code>string firstName;
+	cout << "Type your first name: ";
+	cin >> firstName; // get user input from the keyboard
+	cout << "Your name is: " << firstName;</code>
+	<p>Remember that <code id="ct">cin</code> comnsiders whitespace and tabs as terminating charate, which means that it can only display a single word.</p>
+	</p>
+	<p>Usually when your working with strings you can use the <code id="ct">getline()</code> function to read a line of takes and it takes the <code id="ct">cin</code> as the first paramete, and the string varible as teh second<br>
+	Example:<br>
+	<code>string fullName;
+	cout << "Type your full name: ";
+	getline (cin, fullName);
+	cout << "Your name is: " << fullName;</code>
+	</p>
+
+<h1>String Namespace</h1>
+	<p>Some C++ programs cna run without the standard namespace library.</p>
+	<p>You can replace the <code id="ct">namespace srd</code> with the <code id="ct">std</code> keyword followed by the <code id="ct">::</code> for <code id="ct">string</code>  and <code id="ct">cout</code>.</p>
+	<p>Example:<br>
+	<code>#include &ltiostream&gt<br>
+	#include &ltstring&gt<br>
+
+	int main() {<br>
+	  std::string greeting = "Hello";<br>
+	  std::cout << greeting;<br>
+	  return 0;
+	}</code>
+	</p>
+
+<h1>Math</h1>
+	<p>There are many features that allows you to perform mathimatical tasks on numbers within C++</p>
+	<p>The <code id="ct">max(x,y)</code> function can be used to fidn the highest value and x and y:
+	<code>cout << (max5,10):</code><br>
+	</p>
+	<p>The <code id="ct">min(x,y)</code> function can be used to find the lowest value of x and y:<br>
+	<code>cout << min(1,10);</code>
+	</p>
+	<p>Other math functions included in the <code id="ct">&ltcmath&gt</code> header <code id="id">sqrt</code>, <code id="id">round</code> and <code id="id">log</code><br>
+	<br>
+	Example:<br>	
+<code>#include &ltcmath&gt<br>
+	<br>
+	cout << sqrt(25);<br>
+	cout << round(3.1);<br>
+	cout << log(4);</code>
+	</p>
+
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>abs(x)</td>
+			<td>Returns the absolute value of x</td>
+		</tr>
+		<tr>
+			<td>acos(x)</td>
+			<td>Returns the arccosine of x</td>
+		</tr>
+		<tr>
+			<td>asin(x)</td>
+			<td>Returns the arcsine of x</td>
+		</tr>
+		<tr>
+			<td>atan(x)</td>	
+			<td>Returns the arctangent of x</td>
+		</tr>
+		<tr>
+			<td>cbrt(x)</td>
+			<td>Returns the cube root of x</td>
+		</tr>
+		<tr>
+			<td>ceil(x)</td>
+			<td>Returns the value of x rounded up to its nearest integer</td>
+		</tr>
+		<tr>
+			<td>cos(x)</td>
+			<td>Returns the cosine of x</td>
+		</tr>
+		<tr>
+			<td>cosh(x)</td>
+			<td>Returns the hyperbolic cosine of x</td>
+		</tr>
+		<tr>
+			<td>exp(x)</td>
+			<td>Returns the value of Ex</td>
+		</tr>
+		<tr>
+			<td>expm1(x)</td>
+			<td>Returns ex -1</td>
+		</tr>
+		<tr>
+			<td>fabs(x)</td>
+			<td>Returns the absolute value of a floating x</td>
+		</tr>
+		<tr>
+			<td>fdim(x, y)</td>
+			<td>Returns the positive difference between x and y</td>
+		</tr>
+		<tr>
+			<td>floor(x)</td>
+			<td>Returns the value of x rounded down to its nearest integer</td>
+		</tr>
+		<tr>
+			<td>hypot(x, y)</td>
+			<td>Returns sqrt(x2 +y2) without intermediate overflow or underflow</td>
+		</tr>
+		<tr>
+			<td>fma(x, y, z)</td>
+			<td>Returns x*y+z without losing precision</td>
+		</tr>
+		<tr>
+			<td>fmax(x, y)</td>
+			<td>Returns the highest value of a floating x and y</td>
+		</tr>
+		<tr>
+			<td>fmin(x, y)</td>
+			<td>Returns the lowest value of a floating x and y</td>
+		</tr>
+		<tr>
+			<td>fmod(x, y)</td>
+			<td>Returns the floating point remainder of x/y</td>
+		</tr>
+		<tr>
+			<td>pow(x, y)</td>
+			<td>Returns the value of x to the power of y</td>
+		</tr>
+		<tr>
+			<td>sin(x)</td>
+			<td>Returns the sine of x (x is in radians)</td>
+		</tr>
+		<tr>
+			<td>sinh(x)</td>
+			<td>Returns the hyperbolic sine of a double value</td>
+		</tr>
+		<tr>
+			<td>tan(x)</td>
+			<td>Returns the tangent of an angle</td>
+		</tr>
+		<tr>
+			<td>tanh(x)</td>
+			<td>Returns the hyperbolic tangent of a double value</td>
+		</tr>
+	</table>
+
+<h1>Booleans</h1>
+	<p>These will consist of only two values: Yes/No, On/Off or True/False</p>
+	<p>This is called <code id="ct">bool</code> which is either <code id="ct">true</code> (1) or <code id="ct">false</code> (0)</p>
+	<p>Boolean Expression returns a value of true or false. You can use a comparison operator to find out if an expreission is true</p>
+	<p>Booleans are the basis for all C++ comparison and conditions.</p>
+
+<h1>If....Else</h1>
+	<p>C++ support these logical conditions form mathematics:
+	<ul>
+		<li>Less than: <code id="ct">a < b</code></li>
+		<li>Less than or equal to: <code id="ct">a <= b</code></li>
+		<li>Greater than: <code id="ct">a > b</code></li>
+		<li>Greater than or equal to: <code id="ct">a >= b</code></li>
+		<li>Equal to <code id="ct">a == b</code></li>
+		<li>Not Equal to: <code id="ct">a != b</code></li>
+	</ul>
+	</p>
+	<p>The following are conditonal statements to perfrom different actions for different decisions<br>
+	<ul>
+		<li>Use <code id="ct">if</code> to specify a block of code to be executed, if a specified condition is true</li>
+		<li>Use <code id="ct">else</code> to specify a block of code to be executed, if the same condition is false</li>
+		<li>Use <code id="ct">else if</code> to specify a new condition to test, if the first condition is false</li>
+		<li>Use <code id="ct">switch</code> to specify many alternative blocks of code to be executed</li>
+	</ul>
+	</p>
+	<p>Use the <code id="ct">else</code> statment if the condition of a block of code is <code id="ct">false</code><br>
+	Example:<br>
+	<code>if (condition) {<br>
+  	// block of code to be executed if the condition is true<br>
+	} else {<br>
+	// block of code to be executed if the condition is false<br>
+	}</code>
+	</p>
+	<p>The <code id="ct">else if</code> is used to specify a new condition if the first condition is false</p>
+	<p>Syntax:<br>
+	<code>if (condition1) {<br>
+	  // block of code to be executed if condition1 is true<br>
+	} else if (condition2) {<br>
+	  // block of code to be executed if the condition1 is false and condition2 is true<br>
+	} else {<br>
+	  // block of code to be executed if the condition1 is false and condition2 is false<br>
+	}</code>
+	</p>
+	<p>You can also use the short-hand if else know as the ternary operator. It consist of three operands. If can be used to replace mulitple lines of code in a single and is often used to replace simple if else statements.</p>
+	<p>Syntax:<br>
+	<code>variable = (condition) ? expressionTrue : expressionFalse;</code><br>
+	Example:<br>
+	<code>int time = 20;<br>
+	string result = (time < 18) ? "Good day." : "Good evening.";<br>
+	cout << result;</code<
+	</p>
+	<p>The <code id="ct">switch</code> statement is used to select one of many blocks to be executed.<br>
+	Syntax:<br>
+	<code>switch(expression) {<br>
+	  case x:<br>
+	    // code block<br>
+	    break;<br>
+	  case y:<br>
+	    // code block<br>
+	    break;<br>
+	  default:<br>
+	    // code block<br>
+	}</code>
+	</p>
+	<p>It is evaluated one time. The value is compared with each case. If there is a match that block of clode is exeucted. The <code id="ct">break</code> and <code id="ct">default</code> keywords are optional.</p>
+	<p>The <code id="ct">break</code>  keyword will stop the exectuion of more code and case testing.</p>
+	<p>The <code id="ct">default</code>  keyword specifices some code to run if there is no case match</p>
+
+<h1>Loops</h1>
+	<p>Can execute a block of code as long as a specific condition is reached</p>
+	<p>A <code id="ct">while</code> loop loops through a block of code as long as the condition is true:</p>
+	<p>Syntax:<br>
+	<code>while (condition) {<br>
+	  // code block to be executed<br>
+	}</code>
+	</p>
+	<p>The <code id="ct">do/while</code> loop is a variant of the while loop. It will execurte the code block once, before checking if the condition is true and will repeat the loop as long as the condition to true</p>
+	<p>Syntax:<br>
+	<code>do {<br>
+	  // code block to be executed<br>
+	}<br>
+	while (condition);</code>
+	</p>
+	<p class="important">DON'T FORGET TO INCREASE THE VARIABLE IN THE CONDITION OR ELSE THE LOOP WILL NEVER END!</p>
+	<p>If you know how many times you want to loop through a block of code use the <code id="ct">for</code> loop instead</p>
+	<p>Syntax:<br>
+	<code>for (statement 1; statement 2; statement 3) {<br>
+	  // code block to be executed<br>
+	}</code>
+	</p>
+	<ul>
+		<li>Statement 1 is executed (one time) before the execution of the code block.</li>
+		<li>Statement 2 defines the condition for executing the code block.</li>
+		<li>Statement 3 is executed (every time) after the code block has been executed.</li>
+	</ul>
+
+<h1>Break and Continue</h1>
+	<p>The <code id="ct">break</code> statement is used to jump of a loop</p>
+	<p>The <code id="ct">contiue</code> statement is used to break one iteration in the loop, if a specific condition occurs, and will continue to the next iteration of the loop.</p>
+	<p>Both can be used in while loops as well</p>
+
+<h1>Arrays</h1>
+	<p>To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store</p>
+	<p>To access an array element by referring to the index number inside square brackets <code id="ct">[]</code>.</p>
+	<p>To change the value of a specific element, refer to the index number.</p>
+	<p>You can loop through the array elements with the <code id="ct">for</code> loop.</p>
+	<p>You don't have to specify the size of the array. It will only be as big as the elements that are inserted into it.</p>
+	<p>To get the size of an array, you can use the <code id="id">sizeof()</code> operator and then divide the size of the array by the size of the data it contains.</p>
+	<p>Example:<br>
+	<code>int myNumbers[5] = {10, 20, 30, 40, 50};<br>
+	int getArrayLength = sizeof(myNumbers) / sizeof(int);<br>
+	cout << getArrayLength;</code>
+	</p>
+	
+<h1>Multi-Dimensional Arrays</h1>
+	<p>These are arrays within arrays.</p>
+	<p>To declare a multi-dimensional array, define the variable type, specify the name of the array followed by square brackets which specify how many elements the main array has, followed by another set of square brackets which indicates how many elements the sub-arrays have</p>
+	<p>Example:<br>
+	<code>string letters[3][6];</code></p>
+	<div id="codebox">
+	<p>You can also insert values with an array literal, by a comma-seperatd list inside curly braces</p>
+	<p>Example<br>
+	<div id="codedisplay">
+	<code id="rc">string letters[</code><code id="cpp">3</code><code id="rc">][</code><code id="cpp">6</code><code id="rc">] = {</code><br>
+	  <code id="rc">{</code> <code id="cpp">"A"</code><code id="rc">,</code> <code id="cpp">"B"</code><code id="rc">,</code> <code id="cpp">"C"</code><code id="rc">,</code> <code id="cpp">"D"</code><code id="rc">,</code> <code id="cpp">"E"</code><code id="rc">,</code> <code id="cpp">"F"</code> <code id="rc">},</code><br>
+	 <code id="rc"> {</code> <code id="cpp">"G"</code><code id="rc">,</code> <code id="cpp">"H"</code><code id="rc">,</code> <code id="cpp">"I"</code><code id="rc">,</code> <code id="cpp">"J"</code><code id="rc">,</code> <code id="cpp">"K"</code><code id="rc">,</code> <code id="cpp">"L"</code> <code id="rc">},</code><br>
+	 <code id="rc"> {</code> <code id="cpp">"M"</code><code id="rc">,</code> <code id="cpp">"N"</code><code id="rc">,</code> <code id="cpp">"O"</code><code id="rc">,</code> <code id="cpp">"P"</code><code id="rc">,</code> <code id="cpp">"Q"</code><code id="rc">,</code> <code id="cpp">"R"</code> <code id="rc">}</code><br>
+	<code id="rc">};</code>
+	</div>
+	</div>
+	</p>
+
+	<div id="codebox">
+	<p>To access an element of a multi-dimensional array, specify an index number in each of the array's dimensions.</p>
+	<p> Example:<br>
+	<div id="codedisplay">
+		<code id="rc">string letters [</code><code id="cpp">2</code><code id="rc">][</code><code id="cpp">4</code><code id="rc">] = {</code><br>
+		  <code id="rc">{</code> <code id="cpp">"A"</code><code id="rc">,</code> <code id="cpp">"B"</code><code id="rc">,</code> <code id="cpp">"C"</code><code id="rc">,</code> <code id="cpp">"D"</code> <code id="rc">},</code><br>
+		  <code id="rc">{</code> <code id="cpp">"E"</code><code id="rc">,</code> <code id="cpp">"F"</code><code id="rc">,</code> <code id="cpp">"G"</code><code id="rc">,</code> <code id="cpp">"H"</code> <code id="rc">}<br>
+		};</code><br>
+		<br>
+		<code id="rc">cout << [</code><code id="cpp">0</code><code id="rc">][</code><code id="cpp">2</code><code id="rc">];</code>  <code id="rc">// Outputs "C" </code></p>
+	</div>
+	</div>
+
+	<div id="codebox">
+	<p>Example to change elements in a Multi-Dimensional Array:<br>
+	<div id="codedisplay">
+	<code id="rc">string letters[</code><code id="cpp">2<code id="rc">][</code><code id="cpp">4<code id="rc">] = {</code><br>
+	<code id="rc">{</code> <code id="cpp">"A"</code><code id="rc">,</code> <code id="cpp">"B"</code><code id="rc">,</code> <code id="cpp">"C"</code><code id="rc">,</code> <code id="cpp">"D"</code> <code id="rc">},</code><br>
+		  <code id="rc">{</code> <code id="cpp">"E"</code><code id="rc">,</code> <code id="cpp">"F"</code><code id="rc">,</code> <code id="cpp">"G"</code><code id="rc">,</code> <code id="cpp">"H"</code> <code id="rc">}<br>
+		};</code><br>
+	<code id="rc">letters[</code><code id="cpp">0</code><code id="rc">][</code><code id="cpp">0</code><code id="rc">] = </code><code id="cpp">"Z"</code><code id="rc">;</code><br>
+	<br>
+	<code id="rc">cout << letters[</code><code id="cpp">0</code><code id="rc">][</code><code id="cpp">0</code><code id="rc">];  // Now outputs "Z" instead of "A"</code>
+	</p>
+	</div>
+	</div>
+
+	<div id="codebox">
+	<p>Loop through a Multi-Dimensional Array:<br>
+	<div id="codedisplay">
+	<code id="rc">string letters[</code><code id="cpp">2</code><code id="rc">][</code><code id="cpp">4</code><code id="rc">] = {</code><br>
+	<code id="rc">{</code> <code id="cpp">"A"</code><code id="rc">,</code> <code id="cpp">"B"</code><code id="rc">,</code> <code id="cpp">"C"</code><code id="rc">,</code> <code id="cpp">"D"</code> <code id="rc">},</code><br>
+	<code id="rc">{</code> <code id="cpp">"E"</code><code id="rc">,</code> <code id="cpp">"F"</code><code id="rc">,</code> <code id="cpp">"G"</code><code id="rc">,</code> <code id="cpp">"H"</code> <code id="rc">}<br>
+		};</code><br>
+	<code id="cpp">for</code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">i = </code><code id="cpp">0</code> <code id="rc">; i < </code><code id="cpp">2</code> <code id="rc">; i++) {</code><br>
+	  <code id="cpp">for</code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">j = </code><code id="cpp">0</code> <code id="rc">; j < </code><code id="cpp">4</code> <code id="rc">; j++) {<br>
+	    cout << letters[i][j] << </code><code id="cpp">"\n"</code> <code id="rc">;br>
+	}</code>
+	</div>
+	</div>
+
+	<div id="codebox">
+	<p>Loop through a three dimensional array:<br>
+	<div id="codedisplay">
+	<code id="rc">string letters[</code><code id="cpp">2</code><code id="rc">][</code><code id="cpp">2</code><code id="rc">][</code><code id="cpp">2</code><code id="rc">] = {</code><br>
+	  <code id="rc">{</code><br>
+	    <code id="rc">{</code> <code id="cpp">"A"</code><code id="rc">,</code> <code id="cpp">"B"</code> <code id="rc">},<br>
+	    {</code> <code id="cpp">"C"</code><code id="rc">,</code> <code id="cpp">"D"</code> <code id="rc">}<br>
+	  },<br>
+	  {<br>
+	    {</code> <code id="cpp">"E"</code><code id="rc">,</code> <code id="cpp">"F"</code> <code id="rc">},<br>
+	    {</code> <code id="cpp">"G"</code><code id="rc">,</code> <code id="cpp">"H"</code> <code id="rc">}<br>
+	 {<br>
+	{;</code><br>
+	<br>
+	<code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">i = </code><code id="cpp">0</code><code id="rc">; i <</code><code id="cpp"> 2</code><code id="rc">; i++) {</code><br>
+	  <code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code><code id="rc"> j = </code><code id="cpp">0</code><code id="rc">; j < </code><code id="cpp">2</code><code id="rc">; j++) {</code><br>
+	    <code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">k = </code><code id="cpp">0</code><code id="rc">; k < </code><code id="cpp">2</code><code id="rc">; k++) {</code><br>
+	      <code id="rc">cout << letters[i][j][k] <<</code> <code id="cpp">"\n"</code><code id="rc">;<br>
+	    }<br>
+	  }<br>
+	}</code>
+	</div>
+	</div>
 
 </body>
 </html>
