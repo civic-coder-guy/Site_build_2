@@ -78,6 +78,10 @@ tr:nth-child(even) {
   background-color: honeydew;
 }
 
+.important {
+  font-weight: bold;
+}
+
 /* *********Button to try out the calculator******* */
 
 .custom-btn {
