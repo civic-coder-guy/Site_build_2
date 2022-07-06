@@ -1,0 +1,54 @@
+#square {
+  height: 100PX;
+  width: 100px;
+  background-color: #0000FF;
+}
+
+#rectangle {
+  height: 100PX;
+  width: 150px;
+  background-color: #8A2BE2;
+}
+
+#round-rectangle {
+  height: 100PX;
+  width: 150px;
+  border-radius: 25px;
+  background-color: #7FFF00;
+}
+
+#circle {
+  height: 100PX;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #DC143C;
+}
+
+#oval {
+  height: 100PX;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #8B008B;
+}
+
+#half-oval {
+  height: 75px;
+  width: 150px;
+  border-radius: 50% / 100% 100% 0 0;
+  background-color: #9932CC;
+}
+
+#triangle {
+  height: 0;
+  width: 0;
+  border: 50px solid transparent;
+  border-bottom: 100px solid #8B0000;
+}
+
+#cone {
+  height: 0;
+  width: 0;
+  border: 50px solid transparent;
+  border-bottom: 100px solid #00CED1;
+  border-radius: 50%;
+}
