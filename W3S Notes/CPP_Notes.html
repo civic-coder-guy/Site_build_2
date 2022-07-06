@@ -772,7 +772,781 @@
 	<p>Example:<br>
 	<code>int myNumbers[5] = {10, 20, 30, 40, 50};<br>
 	int getArrayLength = sizeof(myNumbers) / sizeof(int);<br>
-	cout << getArrayLength;</code>
+	cout <!DOCTYPE html>
+<html>
+<head>
+<title>C++ Notes</title>
+
+<link rel="stylesheet" href="CPP-stylesheet.css">
+
+</head>
+<body>
+
+<h1>Introduction</h1>
+	<p>It is a cross-platform language that can be used to create high-performace applications.<br>
+	It was developed by Bjarne Stroustrup, as an extension to the C language.<br>
+	It gives programmers a high level of control over system resources and memory.<br>
+	The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.<br>
+	It is one of the world's most popular programming languages.<br>
+	It can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</br>
+	It is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.<br>
+	It is portable and can be used to develop applications that can be adapted to multiple platforms.<br>
+	As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa.<br>
+	C++ was developed as an extension of C, and both languages have almost the same syntax. The main difference between C and C++ is that C++ support classes and objects, while C does not.</p>
+	
+<h1>Getting Started</h1>
+	<p>To get get started and using C++, I receommend following the steps at <a href="https://www.w3schools.com/cpp/cpp_getstarted.asp">W3 Schools</a> to get getting started with writing C++.</p>
+	
+<h1>Syntax</h1>
+	<p>Example breakdown<br>
+	Line 1: <code id="ct">#include &lt;iostream&gt;</code><br>
+	Line 2: <code id="ct">using namespace std;</code><br>
+	Line 3: <br>
+	Line 4: <code id="kw">int </code> <code> main() {</code><br>
+	Line 5: <code>std::</code> <code id="kw">cout</code> <code><<</code> <code>"Hello World!"</code> <code>;</code><br>
+	Line 6: <code id="kw">return 0</code><code>;</code><br>
+	Line 7: <code>}</code>
+	</p>
+	<ol>
+		<li><code id="ct">#include &lt;iostream&gt;</code> is a header file library that lets us work with input and output objects, such as <code id="ct">cout</code> (used in line 5). Header files add functionality to C++ programs.</li>
+		<li><code id="ct">using namespace std</code> means that we can use names for objects and variables from the standard library.</li>
+		<li>A blank line. C++ ignores white space. But we use it to make the code more readable.</li>
+		<li>Another thing that always appear in a C++ program, is <code id="ct">int main()</code>. This is called a function. Any code inside its curly brackets <code id="ct">{}</code> will be executed.</li>
+		<li><code id="ct">cout</code> (pronounced "see-out") is an object used together with the insertion operator (<code id="ct"><<</code>) to output/print text. In our example it will output "Hello World".</li>
+		<li><code id="ct">return 0</code> ends the main function.
+		<li>Do not forget to add the closing curly bracket <code id="ct">}</code> to actually end the main function.
+	</ol>
+<h2>Other Notes:</h2>
+	<ul>
+		<li>Every C++ statement ends with a semicolon ;.</li>
+		<li>The body of <code id="ct">int main()</code> could also been written as:<br>
+		<code id="kw">int</code> <code>main () {</code> <code id="kw">cout</code> <code><< "Hello World! ";</code> <code id="kw"> return 0;</code> <code> }</code></li>
+		<li>The compiler ignores white spaces. However, multiple lines makes the code more readable.</li>
+		<li>It is up to you if you want to include the standard namespace library or not.</li>
+		<li>Including the <code id="kw">using namespace std;</code> is optional.</li>
+		<li>You can also omit <code id="ct">using namesapce std</code> and replace it with <code id="ct">std</code> followed with <code id="ct">::</code><br>
+		<code id="ct">#include &lt;iostream&gt;</code><br>
+		<br>
+		<code id="kw">int</code> <code>main(){<br>
+		     <code><b>std</b> ::cout << "Hello World!";</code><br>
+		     <code id="kw">return 0</code></code>;</code><br>
+		<code>}</code>
+	</ul>
+
+<h1>Output (Print Text)</h1>
+	<p>The <code id="kw">cout</code> object, together with the <code id="kw"><<</code> operator, is used to output values/print text:<br>
+	<code>#include &lt;iostream&gt;</code><br>
+	<code>using namespace std;</code><br>
+	<code id="kw">int</code> <code>main(){<br>
+	     cout << "Hello World!;</code><br>
+	     <code id="kw">return 0</code><code>;</code><br>
+	<code>}</code>
+	</p>
+	<p>you can add as many <code id="ct">cout</code> objects as you want, but it will not put them on a new line.<br>
+	<code>#include &lt;iostream&gt;</code><br>
+	<code>using namespace std;</code><br>
+	<code id="kw">int</code> <code>main(){<br>
+	     cout << "Hello World!;<br>
+	     cout << "C++ is awesome!;</code><br>
+	     <code id="kw">return 0</code><code>;</code><br>
+	<code>}</code>
+	</p>
+
+<h1>New Lines</h1>
+	<p>To insert a new line use the <code id="ct">\n</code> character</p>
+	<p>Inserting two <code id="ct">\n</code> will create a blank line</p>
+	<p>Examples:<br>
+	<code>#include &lt;iostream&gt;<br>
+	using namespace std;</code><br>
+	<br>
+	<code id="kw">int</code> <code> main() {<br>
+ 	 cout << "Hello World!</code> <code id="nl"> \n";</code><br>
+ 	 <code>cout << "I am learning C++";</code><br>
+ 	 <code id="kw">return 0</code><code>;<br>
+	}</code><br>
+	<br>or<br><br>
+	<code id="kw">int</code> <code> main() {<br>
+ 	 cout << "Hello World!</code> <code id="nl"> \n\n";</code><br>
+ 	 <code>cout << "I am learning C++";</code><br>
+ 	 <code id="kw">return 0</code><code>;<br>
+	}</code><br>	
+	<br>or you can use the <code id="ct"> endl</code><br>
+	<br>
+	<code id="kw">int</code> <code> main() {<br>
+ 	 cout << "Hello World!</code> <code id="nl"> endl";</code><br>
+ 	 <code>cout << "I am learning C++";</code><br>
+ 	 <code id="kw">return 0</code><code>;<br>
+	}</code>
+	</p>
+
+<h2>Other Examples of Escape Sequences:</h2>
+	<p>To create a horizatonal tab use the <code id="ct">\t</code><br>
+	To insert a backslash character use the <code id="ct">//</code><br>
+	To inserate a double quote character use the <code id="ct">\"</code>
+	</p>
+
+<h1>Comments</h1>
+	<p>Comments are used to explain your C++ code, and it makes your code more readable<br>
+	Can also be uses to prevent the execution when testing out new code.<br>
+	There are two ways to add comments: singled lined or mulilined.<br>
+	Single-line comments start with two forward slashes <code id="ct">//</code> followed by your text.<br>
+	You can insert your comments before or after your code line.<br>
+	Multi-line comments starts with <code id="ct">/*</code> and ends with <code id="ct">*/</code> and any text inbetween will be ingnored by the compiler<br>
+	</p>
+	
+<h1>Variables</h1>
+	<p>These are containers for storing data values.</p>
+	<p>The different types of variables are:</p>
+		<ul>
+			<li><code id="ct">int</code> - stores integers (whole integers), without decimals.</li>
+			<li><code id="ct">double</code> - stores floating point numbers, with decimals.</li>
+			<li><code id="ct">char</code> - store single characters surrounded by singel quotes.</li>
+			<li><code id="ct">string</code> Stores text surrounded by double quotes.</li>
+			<li><code id="ct">bool</code> - sotres calues with either true or false state.</li>
+		</ul>
+	<p>Examples:<br>
+	<code id="kw">int</code> <code>myNum =</code> <code id="kw">5</code><code>; // Integer (whole number without decimals)</code><br>
+	<code id="kw">double</code> <code>myFloatNum =</code> <code id="kw"> 5.99</code><code>; // Floating point number (with decimals)</code><br>
+	<code id="kw">char</code> <code>myLetter =</code> <code id="kw">'D'</code><code>; // Character</code><br>
+	<code>string myText =</code> <code id="kw"> "Hello"</code><code>; // String (text)</code><br>
+	<code>bool myBoolean =</code> <code id="kw"> true</code><code>; // Boolean (true or false)</code<
+	</p>
+	<p>To display variables the <code id="ct">cout</code> onject is used with the <code id="ct"><<</code> operator.</p>
+	<p>You can combine text and varibles as long as you seperate them with the <code id="ct"><<</code> operator.<br>
+	Example:<br>
+	<code id="kw">int</code> <code>myAge = </code> <code id="kw">37</code><code>;</code><br>
+	<code> cout <<</code><code id="kw>"John is "</code> <code> << myAge << </code> <code id="kw">" years old."</code><code>;</code><br>
+	<br>or you can add varibles together using the <code id="ct>+</code> operator:<br>
+	<code id="kw">int</code> <code> x = </code><code id="kw">5</code><code>;</code><br>
+	<code id="kw">int</code> <code> y = </code><code id="kw">6</code><code>;</code><br>
+	<code id="kw">int</code> <code> sum = x + y </code><code>;</code><br>
+	<code> cout << sum;</code>
+	</p>
+	<p>You can delcare more than one varibale of the same type, if you seperate it with a comma<br>
+	<code id="kw">int</code> <code>x =</code> <code id="kw">5</code><code>, y =</code> <code id="kw">6</code><code>, z =</code> <code id="kw">50</code><code>;</code><br>
+	<code> cout << x + y + z;</code><br>
+	<br>Or you assign the same value to multiple varibales in one line<br>
+	<code id="kw">int</code> <code>x, y, z;</code><br>
+	<code>x = y = z =</code> <code id="kw">50</code><code>;</code><br>
+	<code> cout << x + y + z;</code>
+	</p>
+
+<h1>Identifiers</h1>
+	<p>All variables myt be identified with unique names<br>
+	They can be short names or more descriptive names.<br>
+	here are a few general rules for naming variables<br>
+	<ul>
+		<li>Names can contain letters, digits and underscores</li>
+		<li>Names must begin with a letter or an underscore (_)</li>
+		<li>Names are case sensitive (myVar and myvar are different variables)</li>
+		<li>Names cannot contain whitespaces or special characters like !, #, %, etc.</li>
+		<li>Reserved words (like C++ keywords, such as int) cannot be used as names</li>
+	</ul>
+	</p>
+
+<h1>Constants</h1>
+	<p>When you don't want others to override existing varibales values use the <code id="ct">const</code> keyword, which makes it <b>unchangeable and read-only</b></code><br>
+	Only uses constant when you know that value will unlikey be able to change.</p>
+
+<h1>User Input</h1>
+	<p>If you want to get user input use the <code id="ct">cin</code>.
+	<p><code id="ct">cin</code> is a predefined variable that reads data from the keyboard with the extraction operator (<code id="ct">>></code>).</p>
+	<p>Example of taking user input:<br>
+	<code id="kw">int</code> <code>x;<br>
+	cout << </code> <code id="kw">"Type a number: "</code> <code> //Type a number and press enter<br>
+	cin >> x; //Get user input from the keyboard<br>
+	cout <<</code> <code id="kw">"Your number is: "</code> <code> << x; //Display the input value</code>
+	</p>
+<h2>Other Information</h2>
+	<p><code id="ct">cout</code> is pronounced "see-out" and is used for output with the insertion operator (<code id="ct"><<</code>)<br>
+	<code id="ct">cin</code> is pronounced "see-in: and is used for input with the extraction operator (<code id="ct">>></code>).
+	</p>
+<h1>Creating a Simple Addition Calculator</h1>
+	<div id="codebox">
+		<p>Example Code</p>
+		<div id="codedisplay">
+			<code id="cpp"> int</code> <code id="rc"> x, y;</code><br>
+			<code id="cpp"> int</code> <code id="rc"> sum;</code><br>
+			<code id="rc"> cout <<</code> <code id="ts">"Type a number: "</code><code id="rc">;</code><br>
+			<code id="rc"> cin >> x;</code><br>
+			<code id="rc"> cout <<</code> <code id="ts">"Type another number: "</code><code id="rc">;</code><br>
+			<code id="rc"> cin >> y;<br>
+			sum = x + y;<br>
+			cout <<</code><code id="ts">"Sum is "</code> <code id="rc"> << sum;</code>
+		</div>
+	<p><a href="https://www.w3schools.com/cpp/showcpp.asp?filename=demo_user_input2" target="_blank"><button class="custom-btn btn-7"><span>Click to Try!</span></button></a></p>
+	<p class="credit">Courtesy of <a href="https://www.w3schools.com" target="_blank">W3 Schools</a></p>
+	</div>
+
+<h1>Basic Data Types</h1>
+	<table>
+		<tr>
+			<th>Data Type</th>
+			<th>Size</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><code id="ct">boolean</code></td>
+			<td>1 byte</td>
+			<td>Stores true or false values</td>
+		</tr>
+		<tr>
+			<td><code id="ct">char</code></td>
+			<td>1 byte</td>
+			<td>Stores a single character/letter/number or ASCII values</td>
+		</tr>
+		<tr>
+			<td><code id="ct">int</code></td>
+			<td>2 or 4 bytes</td>
+			<td>Stores whole numbers, without decimals</td>
+		</tr>
+		<tr>
+			<td><code id="ct">float</code></td>
+			<td>4 bytes</td>
+			<td>Stores fractional numbers, containing one or more decimals. (7 decimal digits)</td>
+		</tr>
+		<tr>
+			<td><code id="ct">double</code></td>
+			<td>8 bytes</td>
+			<td>Storing fractional numbers, containing one or more decimals. (15 decimal digits)</td>
+		</tr>
+	</table>
+	
+<h1>Data Types</h1>
+	<h2>Numeric</h2>
+		<p>When you need to store a whole number without decimals like 5 or 1000 use <code id="ct">int</code><br>
+		When you need a floating point number (with decimals) like 8.46 or 3.89765 use <code id="ct">float</code> or <code id="ct">double</code>
+		</p>
+	
+	<h2>Boolean</h2>
+		<p>This is a data type that can only take the two values of <code id="ct">true</code> or <code id="ct">false</code> and when the value is returned <code id="ct">true</code> = <code id="ct">1</code> and <code id="ct">false</code> = <code id="ct">0</code>
+		</p>
+
+	<h2>Charaters</h2>
+		<p>This data type is used to store a single character. It must be surrounded by single quotes 'Z' or 'z'.
+		</p>
+
+	<h2>Strings</h2>
+		<p>This is used to store a sequence of characters. They must be surrounded with double quotes "Hello World".<br>
+		In order to use string you must have an additional header file in the source code, the <code id="ct">#include &ltstring&gt</code> library.
+		</p>
+
+<h1>Operators</h1>
+	<p>Used to perform operations on variables and values.</p>
+	<p>With the <code id="ct">+</code> is used to add together two valus together.</p>
+	<p>There are five groups of operators thet C++ uses and divides them in to:<br>
+		<ul>
+			<li><a href="https://www.w3schools.com/cpp/cpp_operators.asp#arithmetic" target="_blank">Arithmetic operators</a></li>
+			<li><a href="https://www.w3schools.com/cpp/cpp_operators_assignment.asp" target="_blank">Assignment operators</a></li>
+			<li><a href="https://www.w3schools.com/cpp/cpp_operators_comparison.asp" target="_blank">Comparison operators</a></li>
+			<li><a href="https://www.w3schools.com/cpp/cpp_operators_logical.asp" target="_blank">Logical operators</a></li>
+			<li>Bitwise operators</li>
+		</ul>
+	</p>
+<h2>Arithmetic Operators</h2>
+	<table>	
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Example</th>
+		<tr>
+			<td>+</td>
+			<td>Addition</td>
+			<td>Adds together two values</td>
+			<td>x + y</td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>Subtraction</td>
+			<td>Subtracts one value from another</td>
+			<td>x - y</td>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td>Multiplication</td>
+			<td>Multiplies two values</td>
+			<td>x * y</td>
+		</tr>
+		<tr>
+			<td>/</td>
+			<td>Division</td>
+			<td>Divides one value by another</td>
+			<td>x / y</td>
+		</tr>
+		<tr>
+			<td>%</td>
+			<td>Modulus</td>
+			<td>Returns the division remainder</td>
+			<td>x % y</td>
+		</tr>
+		<tr>
+			<td>++</td>
+			<td>Increment</td>
+			<td>Increases the value of a variable by 1</td>
+			<td>++x</td>
+		</tr>
+		<tr>
+			<td>--</td>
+			<td>Decrement</td>
+			<td>Decreases the value of a variable by 1</td>
+			<td>--x</td>
+		</tr>
+	</table>
+
+<h2>Assignment Operators</h2>
+	<p>These are used to assign values to varibales</p>
+		
+	<table>
+		<tr>
+			<th>Operator</th>
+			<th>Example</th>
+			<th>Same As</th>
+		</tr>
+		<tr>
+			<td>=</td>
+			<td>x = 5</td>
+			<td>x = 5</td>	
+		</tr>
+		<tr>
+			<td>+=</td>
+			<td>x += 3</td>
+			<td>x = x + 3</td>
+		</tr>
+		<tr>
+			<td>-=</td>
+			<td>x -= 3</td>
+			<td>x = x - 3</td>	
+		</tr>
+		<tr>
+			<td>*=</td>
+			<td>x *= 3</td>
+			<td>x = x * 3</td>
+		</tr>
+		<tr>
+			<td>/=</td>
+			<td>x /= 3</td>
+			<td>x = x / 3</td>	
+		</tr>
+		<tr>
+			<td>%=</td>
+			<td>x %= 3</td>
+			<td>x = x % 3</td>
+		</tr>
+		<tr>
+			<td>&=</td>
+			<td>x &= 3</td>
+			<td>x = x & 3</td>
+		</tr>
+		<tr>
+			<td>|=</td>
+			<td>x |= 3</td>
+			<td>x = x | 3</td>	
+		</tr>
+		<tr>
+			<td>^=</td>
+			<td>x ^= 3</td>
+			<td>x = x ^ 3</td>	
+		</tr>
+		<tr>
+			<td>>>=</td>
+			<td>x >>= 3</td>
+			<td>x = x >> 3</td>	
+		</tr>
+		<tr>
+			<td><<=</td>
+			<td>x <<= 3</td>
+			<td>x = x << 3</td>
+		</tr>
+	</table>
+
+<h2>Comparison Operators</h2>
+	<p>These are used to compate two values (note: the return value will either be true (1) or false (0)</p>
+
+	<table>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>==</td>
+			<td>Equal to</td>
+			<td>x == y</td>	
+		</tr>
+		<tr>
+			<td>!=</td>
+			<td>Not equal</td>
+			<td>x != y</td>
+		</tr>
+		<tr>
+			<td>></td>
+			<td>Greater than</td>
+			<td>x > y</td>
+		</tr>
+		<tr>
+			<td><</td>
+			<td>Less than</td>
+			<td>x < y</td>	
+		</tr>
+		<tr>
+			<td>>=</td>
+			<td>Greater than or equal to</td>
+			<td>x >= y</td>
+		</tr>
+		<tr>
+			<td><=</td>
+			<td>Less than or equal to</td>
+			<td>x <= y</td>
+		</tr>
+	</table>
+
+<h2>Logical Operators</h2>
+	<p>These are used to determine the logic between variables or values</p>
+	
+	<table>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>&&</td>
+			<td>Logical and</td>
+			<td>Returns true if both statements are true</td>
+			<td>x < 5 &&  x < 10</td>
+		</tr>
+		<tr>
+			<td>||</td>
+			<td>Logical or</td>
+			<td>Returns true if one of the statements is true</td>
+			<td>x < 5 || x < 4</td>	
+		</tr>
+		<tr>
+			<td>!</td>
+			<td>Logical not</td>
+			<td>Reverse the result, returns false if the result is true</td>
+			<td>!(x < 5 && x < 10)</td>
+		</tr>
+	</table>
+
+<h1>String Concatenation and Append</h1>
+	<p>You can use the <code id="ct">+</code> operator can be used between strings to add them together to make a new string.</p>
+	<p>Example<br>
+	<code> string firstName = </code><code id="ct">"John "</code><code>;</code><br>
+	<code> string lastName = </code><code id="ct">"Smith"</code><code>;</code><br>
+	<code> string fullName = firstName + lastName;<br>
+	cout << fullName;</code>
+	</p>
+	<p>You can also concatenate strings with <code id="ct">append()</code></p>
+	<p>Example:<br>
+	<code> string firstName = </code><code id="ct">"John "</code><code>;</code><br>
+	<code> string lastName = </code><code id="ct">"Smith"</code><code>;</code><br>
+	<code> string fullName = firstName.append(lastName);<br>
+	cout << fullName;</code>
+	</p>
+	
+<h1>Numbers and Strings</h1>
+	<p>If you add two numbers the result will be a number, if you add two strings the result will be string concatenation.</p>
+	<p>Trying to add a number and and string will result in an error</p>
+	<p>You can ge teh length of a string by using the <code id="ct">length()</code> function. In C++ you can also use the <code id="ct">size()</code> functions however, its up to you which one you want to use.</p>
+	<p>Examples<br>
+	<code>string = </code><code"ct">"abcdefghijklmnopqrstuvwxyz"</code> <code>;</code><br>
+	<code> cout << </code> <code id="ct">The length o this text string is  "</code> <code> << txt.length();</code><br>
+	<br>
+	<code>string = </code><code"ct">"abcdefghijklmnopqrstuvwxyz"</code> <code>;</code><br>
+	<code> cout << </code> <code id="ct">The length o this text string is  "</code> <code> << txt.size();</code>
+	</p>
+	
+<h1>Access Strings</h1>
+	<p>You can access the character in a string by refering to its index number inside square brackers <code id="kw">[]</code>.</p>
+	<p>Example<br>
+	<code>string myString = </code><code id="ct">"Hello"</code><code> ;<br>
+	cout << myString[</code><code id="ct">0</code><code>];</code>
+	</p>
+	<table>
+		<tr>
+			<td>H</td>
+			<td>E</td>
+			<td>L</td>
+			<td>L</td>
+			<td>O</td>
+		</tr>
+		<tr>
+			<td>[0]</td>
+			<td>[1]</td>
+			<td>[2]</td>
+			<td>[3]</td>
+			<td>[4]</td>
+		</tr>
+	</table>
+	<p>If you need to change specific character in a string refer to the index and use single quotes<br>
+	Example:<br>
+	<code>string myString = </code> <code id="ct">"Hello"</code><code>;<br>
+	myString[</code><code id="ct">0</code><code>] = </code> <code id="ct">'J'</code><code>;<br>
+	cout << myString;</code>
+	</p>
+
+<h1>User Input Strings</h1>
+	<p>You can use the extraction operator <code id="ct">>></code> on <code id="ct">cin</code> to display a string enter by a user<br>
+	<code>string firstName;
+	cout << "Type your first name: ";
+	cin >> firstName; // get user input from the keyboard
+	cout << "Your name is: " << firstName;</code>
+	<p>Remember that <code id="ct">cin</code> comnsiders whitespace and tabs as terminating charate, which means that it can only display a single word.</p>
+	</p>
+	<p>Usually when your working with strings you can use the <code id="ct">getline()</code> function to read a line of takes and it takes the <code id="ct">cin</code> as the first paramete, and the string varible as teh second<br>
+	Example:<br>
+	<code>string fullName;
+	cout << "Type your full name: ";
+	getline (cin, fullName);
+	cout << "Your name is: " << fullName;</code>
+	</p>
+
+<h1>String Namespace</h1>
+	<p>Some C++ programs cna run without the standard namespace library.</p>
+	<p>You can replace the <code id="ct">namespace srd</code> with the <code id="ct">std</code> keyword followed by the <code id="ct">::</code> for <code id="ct">string</code>  and <code id="ct">cout</code>.</p>
+	<p>Example:<br>
+	<code>#include &ltiostream&gt<br>
+	#include &ltstring&gt<br>
+
+	int main() {<br>
+	  std::string greeting = "Hello";<br>
+	  std::cout << greeting;<br>
+	  return 0;
+	}</code>
+	</p>
+
+<h1>Math</h1>
+	<p>There are many features that allows you to perform mathimatical tasks on numbers within C++</p>
+	<p>The <code id="ct">max(x,y)</code> function can be used to fidn the highest value and x and y:
+	<code>cout << (max5,10):</code><br>
+	</p>
+	<p>The <code id="ct">min(x,y)</code> function can be used to find the lowest value of x and y:<br>
+	<code>cout << min(1,10);</code>
+	</p>
+	<p>Other math functions included in the <code id="ct">&ltcmath&gt</code> header <code id="id">sqrt</code>, <code id="id">round</code> and <code id="id">log</code><br>
+	<br>
+	Example:<br>	
+<code>#include &ltcmath&gt<br>
+	<br>
+	cout << sqrt(25);<br>
+	cout << round(3.1);<br>
+	cout << log(4);</code>
+	</p>
+
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>abs(x)</td>
+			<td>Returns the absolute value of x</td>
+		</tr>
+		<tr>
+			<td>acos(x)</td>
+			<td>Returns the arccosine of x</td>
+		</tr>
+		<tr>
+			<td>asin(x)</td>
+			<td>Returns the arcsine of x</td>
+		</tr>
+		<tr>
+			<td>atan(x)</td>	
+			<td>Returns the arctangent of x</td>
+		</tr>
+		<tr>
+			<td>cbrt(x)</td>
+			<td>Returns the cube root of x</td>
+		</tr>
+		<tr>
+			<td>ceil(x)</td>
+			<td>Returns the value of x rounded up to its nearest integer</td>
+		</tr>
+		<tr>
+			<td>cos(x)</td>
+			<td>Returns the cosine of x</td>
+		</tr>
+		<tr>
+			<td>cosh(x)</td>
+			<td>Returns the hyperbolic cosine of x</td>
+		</tr>
+		<tr>
+			<td>exp(x)</td>
+			<td>Returns the value of Ex</td>
+		</tr>
+		<tr>
+			<td>expm1(x)</td>
+			<td>Returns ex -1</td>
+		</tr>
+		<tr>
+			<td>fabs(x)</td>
+			<td>Returns the absolute value of a floating x</td>
+		</tr>
+		<tr>
+			<td>fdim(x, y)</td>
+			<td>Returns the positive difference between x and y</td>
+		</tr>
+		<tr>
+			<td>floor(x)</td>
+			<td>Returns the value of x rounded down to its nearest integer</td>
+		</tr>
+		<tr>
+			<td>hypot(x, y)</td>
+			<td>Returns sqrt(x2 +y2) without intermediate overflow or underflow</td>
+		</tr>
+		<tr>
+			<td>fma(x, y, z)</td>
+			<td>Returns x*y+z without losing precision</td>
+		</tr>
+		<tr>
+			<td>fmax(x, y)</td>
+			<td>Returns the highest value of a floating x and y</td>
+		</tr>
+		<tr>
+			<td>fmin(x, y)</td>
+			<td>Returns the lowest value of a floating x and y</td>
+		</tr>
+		<tr>
+			<td>fmod(x, y)</td>
+			<td>Returns the floating point remainder of x/y</td>
+		</tr>
+		<tr>
+			<td>pow(x, y)</td>
+			<td>Returns the value of x to the power of y</td>
+		</tr>
+		<tr>
+			<td>sin(x)</td>
+			<td>Returns the sine of x (x is in radians)</td>
+		</tr>
+		<tr>
+			<td>sinh(x)</td>
+			<td>Returns the hyperbolic sine of a double value</td>
+		</tr>
+		<tr>
+			<td>tan(x)</td>
+			<td>Returns the tangent of an angle</td>
+		</tr>
+		<tr>
+			<td>tanh(x)</td>
+			<td>Returns the hyperbolic tangent of a double value</td>
+		</tr>
+	</table>
+
+<h1>Booleans</h1>
+	<p>These will consist of only two values: Yes/No, On/Off or True/False</p>
+	<p>This is called <code id="ct">bool</code> which is either <code id="ct">true</code> (1) or <code id="ct">false</code> (0)</p>
+	<p>Boolean Expression returns a value of true or false. You can use a comparison operator to find out if an expreission is true</p>
+	<p>Booleans are the basis for all C++ comparison and conditions.</p>
+
+<h1>If....Else</h1>
+	<p>C++ support these logical conditions form mathematics:
+	<ul>
+		<li>Less than: <code id="ct">a < b</code></li>
+		<li>Less than or equal to: <code id="ct">a <= b</code></li>
+		<li>Greater than: <code id="ct">a > b</code></li>
+		<li>Greater than or equal to: <code id="ct">a >= b</code></li>
+		<li>Equal to <code id="ct">a == b</code></li>
+		<li>Not Equal to: <code id="ct">a != b</code></li>
+	</ul>
+	</p>
+	<p>The following are conditonal statements to perfrom different actions for different decisions<br>
+	<ul>
+		<li>Use <code id="ct">if</code> to specify a block of code to be executed, if a specified condition is true</li>
+		<li>Use <code id="ct">else</code> to specify a block of code to be executed, if the same condition is false</li>
+		<li>Use <code id="ct">else if</code> to specify a new condition to test, if the first condition is false</li>
+		<li>Use <code id="ct">switch</code> to specify many alternative blocks of code to be executed</li>
+	</ul>
+	</p>
+	<p>Use the <code id="ct">else</code> statment if the condition of a block of code is <code id="ct">false</code><br>
+	Example:<br>
+	<code>if (condition) {<br>
+  	// block of code to be executed if the condition is true<br>
+	} else {<br>
+	// block of code to be executed if the condition is false<br>
+	}</code>
+	</p>
+	<p>The <code id="ct">else if</code> is used to specify a new condition if the first condition is false</p>
+	<p>Syntax:<br>
+	<code>if (condition1) {<br>
+	  // block of code to be executed if condition1 is true<br>
+	} else if (condition2) {<br>
+	  // block of code to be executed if the condition1 is false and condition2 is true<br>
+	} else {<br>
+	  // block of code to be executed if the condition1 is false and condition2 is false<br>
+	}</code>
+	</p>
+	<p>You can also use the short-hand if else know as the ternary operator. It consist of three operands. If can be used to replace mulitple lines of code in a single and is often used to replace simple if else statements.</p>
+	<p>Syntax:<br>
+	<code>variable = (condition) ? expressionTrue : expressionFalse;</code><br>
+	Example:<br>
+	<code>int time = 20;<br>
+	string result = (time < 18) ? "Good day." : "Good evening.";<br>
+	cout << result;</code<
+	</p>
+	<p>The <code id="ct">switch</code> statement is used to select one of many blocks to be executed.<br>
+	Syntax:<br>
+	<code>switch(expression) {<br>
+	  case x:<br>
+	    // code block<br>
+	    break;<br>
+	  case y:<br>
+	    // code block<br>
+	    break;<br>
+	  default:<br>
+	    // code block<br>
+	}</code>
+	</p>
+	<p>It is evaluated one time. The value is compared with each case. If there is a match that block of clode is exeucted. The <code id="ct">break</code> and <code id="ct">default</code> keywords are optional.</p>
+	<p>The <code id="ct">break</code>  keyword will stop the exectuion of more code and case testing.</p>
+	<p>The <code id="ct">default</code>  keyword specifices some code to run if there is no case match</p>
+
+<h1>Loops</h1>
+	<p>Can execute a block of code as long as a specific condition is reached</p>
+	<p>A <code id="ct">while</code> loop loops through a block of code as long as the condition is true:</p>
+	<p>Syntax:<br>
+	<code>while (condition) {<br>
+	  // code block to be executed<br>
+	}</code>
+	</p>
+	<p>The <code id="ct">do/while</code> loop is a variant of the while loop. It will execurte the code block once, before checking if the condition is true and will repeat the loop as long as the condition to true</p>
+	<p>Syntax:<br>
+	<code>do {<br>
+	  // code block to be executed<br>
+	}<br>
+	while (condition);</code>
+	</p>
+	<p class="important">DON'T FORGET TO INCREASE THE VARIABLE IN THE CONDITION OR ELSE THE LOOP WILL NEVER END!</p>
+	<p>If you know how many times you want to loop through a block of code use the <code id="ct">for</code> loop instead</p>
+	<p>Syntax:<br>
+	<code>for (statement 1; statement 2; statement 3) {<br>
+	  // code block to be executed<br>
+	}</code>
+	</p>
+	<ul>
+		<li>Statement 1 is executed (one time) before the execution of the code block.</li>
+		<li>Statement 2 defines the condition for executing the code block.</li>
+		<li>Statement 3 is executed (every time) after the code block has been executed.</li>
+	</ul>
+
+<h1>Break and Continue</h1>
+	<p>The <code id="ct">break</code> statement is used to jump of a loop</p>
+	<p>The <code id="ct">contiue</code> statement is used to break one iteration in the loop, if a specific condition occurs, and will continue to the next iteration of the loop.</p>
+	<p>Both can be used in while loops as well</p>
+
+<h1>Arrays</h1>
+	<p>To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store</p>
+	<p>To access an array element by referring to the index number inside square brackets <code id="ct">[]</code>.</p>
+	<p>To change the value of a specific element, refer to the index number.</p>
+	<p>You can loop through the array elements with the <code id="ct">for</code> loop.</p>
+	<p>You don't have to specify the size of the array. It will only be as big as the elements that are inserted into it.</p>
+	<p>To get the size of an array, you can use the <code id="id">sizeof()</code> operator and then divide the size of the array by the size of the data it contains.</p>
+	<p>Example:<br>
+	<code>int myNumbers[5] = {10, 20, 30, 40, 50};<br>
+	int getArrayLength = sizeof(myNumbers) / sizeof(int);<br>
+	cout &lt&lt getArrayLength;</code>
 	</p>
 	
 <h1>Multi-Dimensional Arrays</h1>
@@ -802,40 +1576,40 @@
 		  <code id="rc">{</code> <code id="cpp">"E"</code><code id="rc">,</code> <code id="cpp">"F"</code><code id="rc">,</code> <code id="cpp">"G"</code><code id="rc">,</code> <code id="cpp">"H"</code> <code id="rc">}<br>
 		};</code><br>
 		<br>
-		<code id="rc">cout << [</code><code id="cpp">0</code><code id="rc">][</code><code id="cpp">2</code><code id="rc">];</code>  <code id="rc">// Outputs "C" </code></p>
+		<code id="rc">cout &lt&lt [</code><code id="cpp">0</code><code id="rc">][</code><code id="cpp">2</code><code id="rc">];</code>  <code id="rc">// Outputs "C" </code></p>
 	</div>
 	</div>
 
 	<div id="codebox">
-	<p>Example to change elements in a Multi-Dimensional Array:<br>
+	<p>Example to change elements in a Multi-Dimensional Array:
 	<div id="codedisplay">
-	<code id="rc">string letters[</code><code id="cpp">2<code id="rc">][</code><code id="cpp">4<code id="rc">] = {</code><br>
+	<code id="rc">string letters[</code><code id="cpp">2</code><code id="rc">][</code><code id="cpp">4</code><code id="rc">] = {</code><br>
 	<code id="rc">{</code> <code id="cpp">"A"</code><code id="rc">,</code> <code id="cpp">"B"</code><code id="rc">,</code> <code id="cpp">"C"</code><code id="rc">,</code> <code id="cpp">"D"</code> <code id="rc">},</code><br>
 		  <code id="rc">{</code> <code id="cpp">"E"</code><code id="rc">,</code> <code id="cpp">"F"</code><code id="rc">,</code> <code id="cpp">"G"</code><code id="rc">,</code> <code id="cpp">"H"</code> <code id="rc">}<br>
 		};</code><br>
 	<code id="rc">letters[</code><code id="cpp">0</code><code id="rc">][</code><code id="cpp">0</code><code id="rc">] = </code><code id="cpp">"Z"</code><code id="rc">;</code><br>
 	<br>
-	<code id="rc">cout << letters[</code><code id="cpp">0</code><code id="rc">][</code><code id="cpp">0</code><code id="rc">];  // Now outputs "Z" instead of "A"</code>
+	<code id="rc">cout &lt&lt letters[</code><code id="cpp">0</code><code id="rc">][</code><code id="cpp">0</code><code id="rc">];  // Now outputs "Z" instead of "A"</code>
 	</p>
 	</div>
 	</div>
 
 	<div id="codebox">
-	<p>Loop through a Multi-Dimensional Array:<br>
+	<p>Loop through a Multi-Dimensional Array:</p>
 	<div id="codedisplay">
 	<code id="rc">string letters[</code><code id="cpp">2</code><code id="rc">][</code><code id="cpp">4</code><code id="rc">] = {</code><br>
 	<code id="rc">{</code> <code id="cpp">"A"</code><code id="rc">,</code> <code id="cpp">"B"</code><code id="rc">,</code> <code id="cpp">"C"</code><code id="rc">,</code> <code id="cpp">"D"</code> <code id="rc">},</code><br>
 	<code id="rc">{</code> <code id="cpp">"E"</code><code id="rc">,</code> <code id="cpp">"F"</code><code id="rc">,</code> <code id="cpp">"G"</code><code id="rc">,</code> <code id="cpp">"H"</code> <code id="rc">}<br>
 		};</code><br>
-	<code id="cpp">for</code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">i = </code><code id="cpp">0</code> <code id="rc">; i < </code><code id="cpp">2</code> <code id="rc">; i++) {</code><br>
-	  <code id="cpp">for</code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">j = </code><code id="cpp">0</code> <code id="rc">; j < </code><code id="cpp">4</code> <code id="rc">; j++) {<br>
-	    cout << letters[i][j] << </code><code id="cpp">"\n"</code> <code id="rc">;br>
+	<code id="cpp">for</code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">i = </code><code id="cpp">0</code> <code id="rc">; i &lt </code><code id="cpp">2</code> <code id="rc">; i++) {</code><br>
+	  <code id="cpp">for</code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">j = </code><code id="cpp">0</code> <code id="rc">; j &lt </code><code id="cpp">4</code> <code id="rc">; j++) {<br>
+	    cout &lt&lt letters[i][j] &lt&lt </code><code id="cpp">"\n"</code> <code id="rc">;br>
 	}</code>
 	</div>
 	</div>
 
 	<div id="codebox">
-	<p>Loop through a three dimensional array:<br>
+	<p>Loop through a three dimensional array:</p>
 	<div id="codedisplay">
 	<code id="rc">string letters[</code><code id="cpp">2</code><code id="rc">][</code><code id="cpp">2</code><code id="rc">][</code><code id="cpp">2</code><code id="rc">] = {</code><br>
 	  <code id="rc">{</code><br>
@@ -848,15 +1622,241 @@
 	 {<br>
 	{;</code><br>
 	<br>
-	<code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">i = </code><code id="cpp">0</code><code id="rc">; i <</code><code id="cpp"> 2</code><code id="rc">; i++) {</code><br>
-	  <code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code><code id="rc"> j = </code><code id="cpp">0</code><code id="rc">; j < </code><code id="cpp">2</code><code id="rc">; j++) {</code><br>
-	    <code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">k = </code><code id="cpp">0</code><code id="rc">; k < </code><code id="cpp">2</code><code id="rc">; k++) {</code><br>
-	      <code id="rc">cout << letters[i][j][k] <<</code> <code id="cpp">"\n"</code><code id="rc">;<br>
+	<code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">i = </code><code id="cpp">0</code><code id="rc">; i &lt</code><code id="cpp"> 2</code><code id="rc">; i++) {</code><br>
+	  <code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code><code id="rc"> j = </code><code id="cpp">0</code><code id="rc">; j &lt </code><code id="cpp">2</code><code id="rc">; j++) {</code><br>
+	    <code id="cpp">for </code><code id="rc">(</code><code id="cpp">int</code> <code id="rc">k = </code><code id="cpp">0</code><code id="rc">; k &lt </code><code id="cpp">2</code><code id="rc">; k++) {</code><br>
+	      <code id="rc">cout &lt&lt letters[i][j][k] &lt&lt</code> <code id="cpp">"\n"</code><code id="rc">;<br>
 	    }<br>
 	  }<br>
 	}</code>
 	</div>
 	</div>
+	
+	<p>Great for representing grids, see this example from W3 Schools in how they used a Multi-Dimensional Array in their game of Battleship.</p>
+	<a href="https://www.w3schools.com/cpp/showcpp.asp?filename=demo_array_multi_battleship" target="_blank"><button>Click to try!</button></a>
+
+<h1>Structures</h1>
+	<p>Also called structs are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.</p>
+	<p>Unlike an arrays this can contain many different data types</p>
+	<p>To create a structure, use the struct keyword and declare each of its members inside curly braces.</p>
+	<p>Example:<br>
+	<code>struct {             // Structure declaration<br>
+	  int myNum;         // Member (int variable)<br>
+	  string myString;   // Member (string variable)<br>
+	} myStructure;       // Structure variable</code>
+	</p>
+	<p>To access members of a structure, use the dot syntax <code id="ct">.</code></p>
+	<p>Example:<br>
+	<code>// Create a structure variable called myStructure<br>
+	struct {<br>
+	  int myNum;<br>
+	  string myString;<br>
+	} myStructure;<br>
+	<br>
+	// Assign values to members of myStructure<br>
+	myStructure.myNum = 1;<br>
+	myStructure.myString = "Hello World!";<br>
+	<br>
+	// Print members of myStructure<br>
+	cout &lt&lt myStructure.myNum &lt&lt"\n";<br>
+	cout &lt&lt myStructure.myString &lt&lt "\n";</code>
+	</p>
+	<p>You can use a comma (<code id="ct">,</code>) to use one structure in many variables</p>
+	<p>Example:<br>
+	<code>struct {<br>
+	  int myNum;<br>
+	  string myString;<br>
+	} myStruct1, myStruct2, myStruct3; // Multiple structure variables separated with commas</code>
+	</p>
+	<p>By giving a name to the structure, you can treat it as a data type. This means that you can create variables with this structure anywhere in the program at any time.</p>
+	<p>Example:<br>
+	<code>struct myDataType { // This structure is named "myDataType"<br>
+	  int myNum;<br>
+	  string myString;<br>
+	};</code>
+	</p>
+	<p>To declare a variable that uses the structure</p>
+	<p>Example:<br>
+	<code>myDataType myVar;</code>
+	</p>
+
+<h1>References</h1>
+	<p>This is a variable to an exisiting variable and is created with the <code id="ct">&</code>operator</p>
+	<p>Example:<br>
+	<code>string food = "Pizza";  // food variable<br>
+	string &meal = food;    // reference to food<br>
+	cout << food << "\n";  // Outputs Pizza<br>
+	cout << meal << "\n";  // Outputs Pizza</code>
+	</p>
+
+<h1>Memory Address</h1>
+	<p>The <code id="ct">&</code> operator was used to create a reference variable. But it can also be used to get the memory address of a variable; which is the location of where the variable is stored on the computer.</p>
+	<p>Example:<br>
+	<code>string food = "Pizza";<br>
+	cout << &food; // Outputs 0x6dfed4</code>
+	</p>
+	<p><em>Note the above memory address is in hexadecimal form</em></p>
+
+<h1>Pointer</h1>
+	<p>A pointer however, is a variable that stores the memory address as its value.</p>
+	<p>It points to a data type (like <code id="ct">int</code> or <code id="ct">string</code>) of the same type, and is created with the <code id="ct">*</code> operator.</p>
+	<p>Example:<br>
+	<code>string food = "Pizza";  // A food variable of type string<br>
+	string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food<br>
+	<br>
+	// Output the value of food (Pizza)<br>
+	cout << food << "\n";<br>
+	<br>
+	// Output the memory address of food (0x6dfed4)<br>
+	cout << &food << "\n";<br>
+	<br>
+	// Output the memory address of food with the pointer (0x6dfed4)<br>
+	cout << ptr << "\n";</code>
+	</p>
+
+<h1>Dereference</h1>
+	<p>you can also use the pointer to get the value of the variable, by using the <code id="ct">*</code> operator</p>
+	<p>Example:<br>
+	<code>string food = "Pizza";  // Variable declaration<br>
+	string* ptr = &food;    // Pointer declaration<br>
+	<br>
+	// Reference: Output the memory address of food with the pointer (0x6dfed4)<br>
+	cout << ptr << "\n";<br>
+	<br>
+	// Dereference: Output the value of food with the pointer (Pizza)<br>
+	cout << *ptr << "\n";</code>
+	</p>
+	<p>You can also change the pointers value</p>
+	<p>Example:<br>
+	<code>string food = "Pizza";<br>
+	string* ptr = &food;<br>
+	<br>
+	// Output the value of food (Pizza)<br>
+	cout << food << "\n";<br>
+	<br>
+	// Output the memory address of food (0x6dfed4)<br>
+	cout << &food << "\n";<br>
+	<br>
+	// Access the memory address of food and output its value (Pizza)<br>
+	cout << *ptr << "\n";<br>
+	<br>
+	// Change the value of the pointer<br>
+	*ptr = "Hamburger";<br>
+	<br>
+	// Output the new value of the pointer (Hamburger)<br>
+	cout << *ptr << "\n";<br>
+	<br>
+	// Output the new value of the food variable (Hamburger)<br>
+	cout << food << "\n";</code>
+	</p>
+
+<h1>Functions</h1>
+	<p>Is a block of code that ony runs when it is called. You can pass data also known as parameters in to a function.</p>
+	<p>Functions are used to perofrem certain actions and are important for reusing code.</p>
+	<p>To create a function specify the name followed by parentheses</p>
+	<p>Syntax:<br>
+	<code>void myFunction() {<br>
+	  // code to be executed<br>
+	}</code>
+	</p>
+	<p>To call a function write the functions name followed by <code id="ct">()</code> and a semicolon <code id="ct">;</code></p>
+	<p>Example:<br>
+	<code>// Create a function<br>
+	void myFunction() {<br>
+	  cout << "I just got executed!";<br>
+	}<br>
+	<br>
+	int main() {<br>
+	  myFunction(); // call the function<br>
+	  return 0;<br>
+	}<br>
+	<br>
+	// Outputs "I just got executed!"</code>
+	</p>
+	<p>Functions can be called multiple times</p>
+	<p>Example:<br>
+	<code>int main() {<br>
+	  myFunction();<br>
+	  myFunction();<br>
+	  myFunction();<br>
+	  return 0;<br>
+	}<br>
+	<br>
+	// I just got executed!<br>
+	// I just got executed!<br>
+	// I just got executed!</code>
+	</p>
+	<p>Functions consist of two parts:<br>
+	<b>Declaration:</b> the return type, the name of the function, and parameters (if any)<br>
+	<b>Definition:</b> the body of the function (code to be executed)</p>
+
+<h1>Function Parameters</h1>
+	<p>Information can be passed to functions as a parameter.</p>
+	<p>Parameters act as variables inside the function.</p>
+	<p>Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.</p>
+	<p>Syntax:<br>
+	<code>void functionName(parameter1, parameter2, parameter3) {<br>
+	  // code to be executed<br>
+	}</code>
+	</p>
+	<p>Example:<br>
+	<code>void myFunction(string fname) {<br>
+	  cout << fname << " Liter\n";<br>
+	}<br>
+	<br>
+	int main() {<br>
+	  myFunction("Christian");<br>
+	  myFunction("Ellanora");<br>
+	  myFunction("Alexander");<br>
+	  return 0;<br>
+	}<br>
+	<br>
+	// Christian Liter<br>
+	// Ellanora Liter<br>
+	// Alexander Liter</code>
+	</p>
+
+<h1>Default Parameters</h1>
+	<p>You can use a default parameter value by using the equals sign <code id="ct">=</code></p>
+	<p>Example:<br>
+	<code>void myFunction(string country = "Norway") {<br>
+	  cout << country << "\n";<br>
+	}<br>
+	<br>
+	int main() {<br>
+	  myFunction("Sweden");<br>
+	  myFunction("India");<br>
+	  myFunction();<br>
+	  myFunction("USA");<br>
+	  return 0;<br>
+	}<br>
+	<br>
+	// Sweden<br>
+	// India<br>
+	// Norway<br>
+	// USA</code>
+	</p>
+
+<h1>Multiple Parameters</h1>
+	<p>You can add as many parameters as you want or need.</p>
+	<p>Example:<br>
+	<code>void myFunction(string fname, int age) {<br>
+	  cout << fname << " Liter. " << age << " years old. \n";<br>
+	}<br>
+	<br>
+	int main() {<br>
+	  myFunction("Christian", 11);<br>
+	  myFunction("Ellanora", 4);<br>
+	  myFunction("Alexander", 1);<br>
+	  return 0;<br>
+	}<br>
+	<br>
+	// Christian Liter. 1 years old.<br>
+	// Ellanora Liter. 4 years old.<br>
+	// Alexander Liter. 1 years old.</code>
+	</p>
+	<p>Working with multiple parameters, the function call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order.</p>
+	
 
 </body>
 </html>
