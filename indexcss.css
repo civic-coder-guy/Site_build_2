@@ -29,7 +29,7 @@
 
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url('/John_Liter/Photos/under_construction.jpg');
+        background-image: url('/John_Liter/Photos/American_Flag.png');
         min-height: 100%;
     }
 
@@ -66,6 +66,10 @@
 
     .new {
        color: #8B0000; 
+    }
+
+    .updated {
+        color: #FFD700;
     }
 
 /*Middle section CSS*/
