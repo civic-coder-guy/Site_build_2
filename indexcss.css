@@ -64,7 +64,7 @@
         }
     }
 
-    b {
+    .new {
        color: #8B0000; 
     }
 
@@ -82,7 +82,7 @@
   /* Apply the animation to the text */
   .scrolling-text {
     white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    animation: scroll 30s linear infinite; /* Adjust the duration and timing function as needed */
+    /* overflow: hidden; Hide overflowing text */
+    animation: scroll 25s linear infinite; /* Adjust the duration and timing function as needed */
     font-size: 26px; /*Adjust the font size as you see fit*/
   }
