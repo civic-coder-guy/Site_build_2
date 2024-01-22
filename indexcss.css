@@ -75,6 +75,18 @@
 /*Middle section CSS*/
 .w3-display-middle {
     white-space: nowrap;
+    text-align: center; /*Center the text within the container*/
+}
+
+.w3-xlarge {
+    font-size: 24px;/*adjust this font for larger screens*/
+}
+
+/*Applies style for screens with a max width of 600 pixels*/
+@media only screen and (max-width: 600px) {
+    .w3-xlarge {
+        font-size: 16px;/* adjust for smaller screens*/
+    }
 }
 
 /* Define the animation */
