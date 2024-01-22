@@ -3,7 +3,8 @@ body {
   font-weight: 700;
   font-size: 30px;
   padding: 20px;
-  background: url("https://cdn.hipwallpaper.com/i/56/5/8Sm2Ah.jpg");
+  background-image: url('/John_Liter/CPC-pi/pi.jpeg');
+  min-height: 100%;
   color: #00DFFC;
 }
 
