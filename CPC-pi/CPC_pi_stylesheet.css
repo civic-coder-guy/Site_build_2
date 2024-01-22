@@ -5,6 +5,10 @@ body {
   padding: 20px;
   background-image: url('/John_Liter/CPC-pi/pi.jpeg');
   min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #00DFFC;
 }
 
