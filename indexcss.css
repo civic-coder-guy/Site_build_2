@@ -1,4 +1,4 @@
-//Index page CSS
+/*Index page CSS*/
 
     body,
     h1,
@@ -63,3 +63,21 @@
             min-height: 400px;
         }
     }
+
+/*Middle section CSS*/
+.w3-display-middle {
+    white-space: nowrap;
+}
+
+/* Define the animation */
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* Apply the animation to the text */
+  .scrolling-text {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    animation: scroll 10s linear infinite; /* Adjust the duration and timing function as needed */
+  }
