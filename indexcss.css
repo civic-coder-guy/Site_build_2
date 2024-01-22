@@ -64,6 +64,10 @@
         }
     }
 
+    b {
+       color: #8B0000; 
+    }
+
 /*Middle section CSS*/
 .w3-display-middle {
     white-space: nowrap;
@@ -79,5 +83,6 @@
   .scrolling-text {
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflowing text */
-    animation: scroll 10s linear infinite; /* Adjust the duration and timing function as needed */
+    animation: scroll 30s linear infinite; /* Adjust the duration and timing function as needed */
+    font-size: 26px; /*Adjust the font size as you see fit*/
   }
