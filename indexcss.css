@@ -88,9 +88,13 @@
         font-size: 16px !important; /* Adjust font size for smaller screens */
     }
 
-    .w3-padding-large {
+    .w3-display-middle {
         background-color: rgba(0, 0, 0, 0.5); /* Set background to transparent (about 50% transparent) on smaller screens */
         padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .scrolling-text {
+        font-size: 16px; /*Adust for smaller screans*/
     }
 }
 
