@@ -96,6 +96,10 @@
     .scrolling-text {
         font-size: 16px; /*Adust for smaller screans*/
     }
+
+    .project-icon {
+        max-width: 50px; /* Set the maximum width for smaller screens */
+    }
 }
 
 /* Define the animation */
@@ -116,3 +120,7 @@
     overflow: hidden;
     width: 100%;
   }
+
+  .project-icon {
+    width: 100%; /* Set the initial width to 100% */
+}
