@@ -78,15 +78,18 @@
     text-align: center; /*Center the text within the container*/
 }
 
-.w3-xlarge {
-    font-size: 24px;/*adjust this font for larger screens*/
+.w3-display-middle p.w3-xlarge {
+    font-size: 24px; /* Adjust font size for larger screens */
 }
 
 /*Applies style for screens with a max width of 600 pixels*/
 @media only screen and (max-width: 600px) {
-    .w3-xlarge {
-        font-size: 16px !important;/* adjust for smaller screens*/
-        padding: 10px;
+    .w3-display-middle p.w3-xlarge {
+        font-size: 16px !important; /* Adjust font size for smaller screens */
+    }
+
+    .w3-padding-large {
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 }
 
