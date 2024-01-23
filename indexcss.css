@@ -107,9 +107,12 @@
   /* Apply the animation to the text */
   .scrolling-text {
     white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden;
     animation: scroll 25s linear infinite; /* Adjust the duration and timing function as needed */
-    font-size: 26px; /*Adjust the font size as you see fit*/
-    width: 100%; /*Ensures the text takes up the full width of the container*/
+    font-size: 20px; /*Adjust the font size as you see fit*/
     display: inline-block;/*Ensures the text is treated as a block-level element*/
+  }
+
+  .scrolling-text-container {
+    overflow: hidden;
+    width: 100%;
   }
