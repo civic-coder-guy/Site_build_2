@@ -72,6 +72,10 @@
         color: #FFD700;
     }
 
+    .soon {
+        color: #FF4500;
+    }
+
 /*Middle section CSS*/
 .w3-display-middle {
     white-space: nowrap;
