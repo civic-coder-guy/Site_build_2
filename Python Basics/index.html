@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Summarized by John Liter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="prism.css">
+</head>
+<body>
+    <header>
+        <h1>Python Summarized<br>by John Liter</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Python Expressions</h2>
+            <p>Python expressions are pieces of code that produce a value when executed. They can include various elements such as literals, variables, operators, and function calls.</p>
+            <ol>
+                <li><strong>Literals:</strong> Represent fixed values in code, like numbers or strings.</li>
+                <li><strong>Variables:</strong> Symbols that store values and can be used in expressions.</li>
+                <li><strong>Operators:</strong> Symbols or keywords that perform operations on operands. Examples include arithmetic operators 
+                    (<code class="language-python">+</code>, <code class="language-python">-</code>, <code class="language-python">*</code>, <code class="language-python">/</code>), comparison operators 
+                    (<code class="language-python">==</code>, <code class="language-python">!=</code>, <code class="language-python">&lt;</code>, <code class="language-python">&gt;</code>), and logical operators 
+                    (<code class="language-python">and</code>, <code class="language-python">or</code>, <code class="language-python">not</code>).</li>
+                <li><strong>Functions:</strong> Invoking built-in or user-defined functions can be part of an expression.</li>
+                <li><strong>Combination:</strong> Expressions can combine multiple elements to perform complex computations.</li>
+            </ol>
+            <h3>Example:</h3>
+            <pre class="line-numbers"><code class="language-python">result = (3 + 5) * (2 - 7) / 4</code></pre>
+        </section>
+
+        <section>
+            <h2>Conditional Statements</h2>
+            <ol>
+                <li><strong>if Statement:</strong> It is used to execute a block of code only if a specified condition is true.
+                    <pre class="line-numbers"><code class="language-python">if condition: # code to be executed if the condition is true</code></pre>
+                </li>
+                <li><strong>else Statement:</strong> It is used in conjunction with an if statement to execute a block of code if the condition in the if statement is false.
+            <pre class="line-numbers"><code class="language-python">if condition:
+    # code to be executed if the condition is true
+else:
+    # code to be executed if the condition is false</code></pre>
+                </li>
+                <li><strong>elif Statement:</strong> Short for "else if," it allows you to check multiple conditions in sequence.
+            <pre class="line-numbers"><code class="language-python">if condition1:
+    # code to be executed if condition1 is true
+elif condition2:
+    # code to be executed if condition2 is true
+else:
+    # code to be executed if no conditions are true</code></pre>
+                </li>
+                <li><strong>Nested Conditionals:</strong> Conditional statements can be nested inside each other to handle more complex scenarios.
+                    <pre class="line-numbers"><code class="language-python">if condition1:
+    if condition2:
+        # code to be executed if both condition1 and condition2 are true</code></pre>
+                </li>
+            </ol>
+        </section>
+        <hr>
+        <section>
+        <h2>Functions</h2>
+        <ol>
+            <li><strong>Defining a Function:</strong> Functions are defined using the <code class="language-python">def</code> keyword, followed by the function name and a pair of parentheses. Any input parameters are specified within the parentheses.
+                <pre class="line-numbers"><code class="language-python">def my_function(parameter1, parameter2):
+    # code to be executed</code></pre>
+            </li>
+            <li><strong>Calling a Function:</strong> To execute a function and utilize its functionality, you call it by using its name followed by parentheses. Input values, if any, are passed as arguments.
+                <pre class="line-numbers"><code class="language-python">result = my_function(value1, value2)</code></pre>
+            </li>
+            <li><strong>Return Statement:</strong> Functions can return a value using the <code class="language-python">return</code> statement. The returned value can be assigned to a variable or used in other parts of the code.
+                <pre class="line-numbers"><code class="language-python">def add_numbers(a, b):
+    return a + b</code></pre>
+            </li>
+            <li><strong>Parameters and Arguments:</strong> Parameters are variables used in the function definition, while arguments are the values passed to the function when it is called.
+                <pre class="line-numbers"><code class="language-python">def greet(name):
+    print("Hello, " + name + "!")
+            
+greet("Alice")</code></pre>
+            </li>
+            <li><strong>Default Parameters:</strong> Function parameters can have default values, which are used if the corresponding argument is not provided during the function call.
+                <pre class="line-numbers"><code class="language-python">def power(base, exponent=2):
+    return base ** exponent</code></pre>
+            </li>
+            <li><strong>Scope:</strong> Variables defined inside a function have local scope, meaning they are only accessible within that function. Variables defined outside functions have global scope.
+            </li>
+            <br>
+            <li><strong>Docstrings:</strong> It's a good practice to include docstrings (triple-quoted strings) in functions to document their purpose, parameters, and return values.
+                <pre class="line-numbers"><code class="language-python">def square(num):
+    """Return the square of a number."""
+    return num ** 2</code></pre>
+            </li>
+        </ol>
+    </section>
+<hr>
+    <section>
+        <h2>Loops and Iterations</h2>
+        <ol>
+            <li><strong>for Loop:</strong> It iterates over a sequence (such as a list, tuple, or string) or other iterable objects. The loop continues until the sequence is exhausted.
+                <pre class="line-numbers"><code class="language-python">for element in sequence:
+    # code to be executed for each element</code></pre>
+            </li>
+            <li><strong>while Loop:</strong> It repeatedly executes a block of code as long as a specified condition is true.
+                <pre class="line-numbers"><code class="language-python">while condition:
+    # code to be executed while the condition is true</code></pre>
+            </li>
+            <li><strong>range() Function:</strong> It is often used with for loops to generate a sequence of numbers. The <code class="language-python">range()</code> function creates a range object that represents a sequence of numbers.
+                <pre class="line-numbers"><code class="language-python">for i in range(5):
+    # code to be executed for each value of i (0 to 4)</code></pre>
+            </li>
+            <li><strong>break Statement:</strong> It is used to exit a loop prematurely if a certain condition is met.
+                <pre class="line-numbers"><code class="language-python">for element in sequence:
+    if condition:
+        break</code></pre>
+            </li>
+            <li><strong>continue Statement:</strong> It skips the rest of the code inside a loop for the current iteration and moves to the next iteration.
+                <pre class="line-numbers"> <code class="language-python">for element in sequence:
+    if condition:
+        continue
+    # code here will be skipped for the current iteration if the condition is true</code></pre>
+            </li>
+            <li><strong>Nested Loops:</strong> Loops can be nested inside each other, allowing for more complex iteration patterns.
+                <pre class="line-numbers"><code class="language-python">for i in range(3):
+    for j in range(2):
+        # code to be executed for each combination of i and j</code></pre>
+            </li>
+        </ol>
+    </section>
+<hr>
+    <section>
+        <h2>Definite Loops</h2>
+        <ol>
+            <li><strong>for Loop:</strong> The "for" loop iterates over a sequence of elements, and the loop continues until the sequence is exhausted. It is often used when the number of iterations is predetermined.
+                <pre class="line-numbers"><code class="language-python">for element in sequence:
+    # code to be executed for each element in the sequence</code></pre>
+            </li>
+            <li><strong>range() Function:</strong> The "range()" function generates a sequence of numbers that can be used with a "for" loop. It is commonly employed for loops with a specific range of iterations.
+                <pre class="line-numbers"><code class="language-python">for i in range(start, stop, step):
+    # code to be executed for each value of i within the specified range</code></pre>
+                <ul>
+                    <li><strong>`start`:</strong> The starting value of the sequence (default is 0).</li>
+                    <li><strong>`stop`:</strong> The end value (exclusive) of the sequence.</li>
+                    <li><strong>`step`:</strong> The step size between values (default is 1).</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+<hr>
+    <section>
+        <h2>Finding the Largest Value</h2>
+        <ol>
+            <li><strong>Using `max()` function:</strong> This approach directly returns the maximum value in the given sequence.
+                <pre class="line-numbers"><code class="language-python">numbers = [10, 5, 8, 20, 15]
+max_value = max(numbers)
+print("The largest value is:", max_value)</code></pre>
+            </li>
+            <li><strong>Manual iteration:</strong> In this approach, we iterate through the elements and update the <code class="language-python">max_value</code> variable whenever a larger value is found.
+                <pre class="line-numbers"><code class="language-python">numbers = [10, 5, 8, 20, 15]
+max_value = numbers[0]  # Assume the first element is the largest initially
+
+for num in numbers:
+    if num > max_value:
+        max_value = num
+
+print("The largest value is:", max_value)</code></pre>
+            </li>
+        </ol>
+    </section>
+<hr>
+    <section>
+        <h2>Loop Idioms</h2>
+        <ol>
+            <li><strong>Looping through a Range:</strong> Using the <code class="language-python">range()</code> function to iterate a specific number of times.
+                <pre class="line-numbers"><code class="language-python">for i in range(n):
+    # code to be executed n times</code></pre>
+                
+            </li>
+            <li><strong>Looping through Enumerated Elements:</strong> Using <code class="language-python">enumerate()</code> to iterate through both the index and value of elements in a sequence.
+                <pre class="line-numbers"><code class="language-python">for i, element in enumerate(sequence):
+    # code to be executed for each index-value pair</code></pre>
+            </li>
+            <li><strong>Looping Backwards:</strong> Using a reversed range to iterate through a sequence in reverse.
+                <pre class="line-numbers"><code class="language-python">for i in range(len(sequence)-1, -1, -1):
+    # code to be executed for each index in reverse order</code></pre>
+            </li>
+            <li><strong>Looping through Multiple Lists:</strong> Using <code class="language-python">zip()</code> to iterate through multiple lists simultaneously.
+                <pre class="line-numbers"><code class="language-python">for item1, item2 in zip(list1, list2):
+    # code to be executed for corresponding elements of both lists</code></pre>
+            </li>
+            <li><strong>List Comprehensions:</strong> A concise way to create lists or perform operations on elements that meet a certain condition.
+                <pre class="line-numbers"><code class="language-python">result = [expression for element in sequence if condition]</code></pre>
+            </li>
+            <li><strong>Filtering Elements:</strong> Using list comprehensions to create a new list with elements that satisfy a specific condition.
+                <pre class="line-numbers"><code class="language-python">filtered_list = [element for element in sequence if condition]</code></pre>
+            </li>
+            <li><strong>Looping until a Condition is Met:</strong> Using a <code class="language-python">while</code> loop to repeatedly execute code until a certain condition is met.
+                <pre class="line-numbers"><code class="language-python">while not condition:
+    # code to be executed until the condition is true</code></pre>
+            </li>
+        </ol>
+    </section>
+    </main>
+
+    <footer>
+        <div>
+            Made with love by John Liter with continued support from my family and friends!
+        </div>
+        <div id="social-links">
+            <p>Click the logo below to be taken to my Linktree.</p>
+            <a href="https://linktr.ee/te03civiclx" class="linktree-link" target="_blank" rel="noopener">
+                <img src="C:\Users\user\OneDrive\Documents\Coding\Python Basics\Social\linktree-logo-icon.png" alt="Linktr.ee" class="button-image">
+            </a>
+        </div>
+    </footer>
+
+    <script src="prism.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

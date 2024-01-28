@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #4e6e7b, #25343a);
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(to bottom, #1c2b35, #081213);
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background: linear-gradient(to bottom, #1c2b35, #081213);
+    padding: 20px;
+    text-align: center;
+}
+
+#comments-section {
+    background-color: #25343a;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+ /* Add CSS styling for Python code examples */
+ pre {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+    width: auto;
+}
+
+.button-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
