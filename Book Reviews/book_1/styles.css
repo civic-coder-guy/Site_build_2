@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f5f5f5, #d8d8d8); /* Gradient background for the body */
+    color: #333; /* Default text color */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ffcc00, #ff6699); /* Gradient colors matching the theme */
+    color: #ffffff; /* Text color */
+}
+
+header img {
+    max-width: 100%;
+    height: 50vh; /* Set the height to 50% of the viewport height */
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: linear-gradient(to right, #ffffff, #f2f2f2); /* Gradient background for the review section */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333333; /* Title color */
+}
+
+section p {
+    color: #555555; /* Text color */
+}
+
+.sticky-social {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #333333; /* Social icon background color */
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff; /* Social icon color */
+}
+
+.sticky-social a {
+    color: #ffffff; /* Social icon color */
+    width: 30px; /* Adjust the width to make the icon smaller */
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+    display: block;
+    margin: 0 auto;
+}
+
+.social-icon {
+    width: 30px; /* Adjust the width to make the icon smaller */
+    height: 30px; /* Adjust the height to make the icon smaller */
+    border-radius: 50%; /* Make the image circular */
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #333333, #222222); /* Gradient background for the footer */
+    color: #ffffff; /* Footer text color */
+}
+
+/* Focus Styles */
+a:focus,
+button:focus {
+    outline: 2px solid #ff6699; /* Focus color */
+    outline-offset: 4px;
+}
+
+.book-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.books {
+    text-align: center; /* Center the text within the container */
+}
+
+.book-links a {
+    flex: 1; /* Equal flex distribution for each retailer logo */
+    max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.book-links a img {
+    width: 150px; /* Adjust the width of the book images */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .book-links {
+        flex-direction: column; /* Stack items in a column on smaller screens */
+        align-items: center; /* Center items on smaller screens */
+    }
+    
+    .book-links a {
+        margin-bottom: 15px; /* Add margin between each book link image on smaller screens */
+    }
+}
+
+.ws img {
+    max-width: 100%;
+    height: auto;
+}
+
+.author {
+    text-align: center;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-image: linear-gradient(90deg, #00e3c8 0%,#fc006d 49%, #82fc00 100%);
+    background-size: 200%;
+    padding: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    width: 80%; /* Adjust the width based on your preference */
+    max-width: 400px; /* Set a maximum width for larger screens */
+    -webkit-animation: anime 1s linear infinite;
+    animation: anime 1s linear infinite;
+}
+@keyframes anime {
+    0%{
+        background-position: 100%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+
+.modal-content {
+    background: rgb(143,143,168);
+    background: -moz-radial-gradient(circle, rgba(143,143,168,1) 25%, rgba(0,102,251,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(143,143,168,1) 25%, rgba(0,102,251,1) 100%);
+    background: radial-gradient(circle, rgba(143,143,168,1) 25%, rgba(0,102,251,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8f8fa8",endColorstr="#0066fb",GradientType=1);
+    margin: 10% auto;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: -20px;
+    margin-right: 0px;
+    border-radius: 5px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.modal-content p {
+    line-height: 1.8;
+    padding: 5px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em; /* Adjust the font size for better readability */
+}
+
+h3 {
+    color: #052099fd;
+}
+
+button {
+    background-color: #07091a;
+    color: #ffc400;
+    font-size: 1.2em; /* Adjust the font size for better readability */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
